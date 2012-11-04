@@ -35,7 +35,7 @@ class World(DirectObject):
 
     def __init__(self):
         
-        self.keyMap = {"left":0, "right":0, "forward":0, "cam-left":0, "cam-right":0}
+        self.keyMap = {"left":0, "right":0, "forward":0, "cam-left":0, "cam-right":0, "make-bunny":0}
         base.win.setClearColor(Vec4(0,0,0,1))
 
         # Post the instructions
@@ -95,7 +95,8 @@ class World(DirectObject):
         self.accept("s-up", self.setKey, ["cam-right",0])
 
         # Dynamic animals
-        self.accept("b", self.setKey, ["make-bunny", 0])
+        self.accept("b", self.setKey, ["make-bunny", 1])
+        self.accept("b-up", self.setKey, ["make-bunny", 0])
 
         taskMgr.add(self.move,"moveTask")
 
@@ -192,8 +193,8 @@ class World(DirectObject):
         if (self.keyMap["make-bunny"]!=0):
             self.bunny = Actor("models/Bunny2")
             self.bunny.reparentTo(render)
-            self.bunny.setScale(0.01)
-            self.bunny.setPos(set.ralph.getPos()) # need to offset
+            self.bunny.setScale(0.1)
+            self.bunny.setPos(self.ralph.getPos() + 1)
 
         # If ralph is moving, loop the run animation.
         # If he is standing still, stop the animation.
