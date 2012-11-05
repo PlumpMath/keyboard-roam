@@ -38,6 +38,9 @@ class World(DirectObject):
         self.keyMap = {"left":0, "right":0, "forward":0, "cam-left":0, "cam-right":0, "make-bunny":0}
         base.win.setClearColor(Vec4(0,0,0,1))
 
+        # Track all of the bunnies
+        self.bunnies = []
+
         # Post the instructions
 
         self.title = addTitle("Keyboard Roaming")
@@ -188,13 +191,22 @@ class World(DirectObject):
             self.ralph.setH(self.ralph.getH() - 300 * globalClock.getDt())
         if (self.keyMap["forward"]!=0):
             self.ralph.setY(self.ralph, -25 * globalClock.getDt())
+            i = 1
+            for bunny in self.bunnies:
+                bunny.setY(self.ralph.getY() + (-25 * globalClock.getDt() * i))
+                i = i + 1
 
         # If an object creation key is pressed, create an object of the desired type
         if (self.keyMap["make-bunny"]!=0):
-            self.bunny = Actor("models/Bunny2")
-            self.bunny.reparentTo(render)
-            self.bunny.setScale(0.1)
-            self.bunny.setPos(self.ralph.getPos() + 1)
+            self.keyMap["make-bunny"] = 0           # Avoid multiplying like rabbits!
+            new_bunny = Actor("models/Bunny2")
+            new_bunny.reparentTo(render)
+            new_bunny.setScale(0.22)
+            if (len(self.bunnies)==0):
+                new_bunny.setX(self.ralph.getX() + 1)
+            else:
+                new_bunny.setX(self.bunnies[len(self.bunnies)-1].getX() + 1)
+            self.bunnies.append(new_bunny)
 
         # If ralph is moving, loop the run animation.
         # If he is standing still, stop the animation.
