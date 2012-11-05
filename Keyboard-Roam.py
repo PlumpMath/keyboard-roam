@@ -17,7 +17,7 @@ from panda3d.core import Vec3,Vec4,BitMask32
 from direct.gui.OnscreenText import OnscreenText
 from direct.actor.Actor import Actor
 from direct.showbase.DirectObject import DirectObject
-import random, sys, os, math
+import random, sys, os, math, string
 
 SPEED = 0.5
 
@@ -35,8 +35,11 @@ class World(DirectObject):
 
     def __init__(self):
         
-        self.keyMap = {"left":0, "right":0, "forward":0, "cam-left":0, "cam-right":0, "make-bunny":0}
+        self.keyMap = {"left":0, "right":0, "forward":0, "cam-left":0, "cam-right":0, "make-bunny":0, "do-something":0}
         base.win.setClearColor(Vec4(0,0,0,1))
+
+        # Track all of the bunnies
+        self.bunnies = []
 
         # Post the instructions
 
@@ -80,23 +83,59 @@ class World(DirectObject):
         self.floater = NodePath(PandaNode("floater"))
         self.floater.reparentTo(render)
 
-        # Accept the control keys for movement and rotation
-
+        # ESC key exits
         self.accept("escape", sys.exit)
-        self.accept("arrow_left", self.setKey, ["left",1])
-        self.accept("arrow_right", self.setKey, ["right",1])
-        self.accept("arrow_up", self.setKey, ["forward",1])
-        self.accept("a", self.setKey, ["cam-left",1])
-        self.accept("s", self.setKey, ["cam-right",1])
+
+        # TODO - Ignore all of these:
+        # "escape", "f"+"1-12" (e.g. "f1","f2",..."f12"), "print_screen" "scroll_lock"
+        # "backspace", "insert", "home", "page_up", "num_lock"
+        # "tab",  "delete", "end", "page_down"
+        # "caps_lock", "enter", "arrow_left", "arrow_up", "arrow_down", "arrow_right"
+        # "shift", "lshift", "rshift",
+        # "control", "alt", "lcontrol", "lalt", "space", "ralt", "rcontrol"
+
+        # Accept the control keys for movement and rotation
+        self.accept("arrow_left",    self.setKey, ["left",1])
         self.accept("arrow_left-up", self.setKey, ["left",0])
+
+        self.accept("arrow_right",    self.setKey, ["right",1])
         self.accept("arrow_right-up", self.setKey, ["right",0])
-        self.accept("arrow_up-up", self.setKey, ["forward",0])
-        self.accept("a-up", self.setKey, ["cam-left",0])
-        self.accept("s-up", self.setKey, ["cam-right",0])
+
+        self.accept("arrow_up",       self.setKey, ["forward",1])
+        self.accept("arrow_up-up",    self.setKey, ["forward",0])
+
+        # Create string of all ASCII characters in set form for easy manipulation
+        allKeysArray = []
+        for k in string.printable:
+            allKeysArray.append(k)
+        allKeysSet = set(allKeysArray)
+
+        # Accept various printable characters for control operations
+        self.accept("a",              self.setKey, ["cam-left",1])
+        self.accept("shift-a",        self.setKey, ["cam-left",1])
+        self.accept("a-up",           self.setKey, ["cam-left",0])
+        self.accept("shift-a-up",     self.setKey, ["cam-left",0])
+        allKeysSet = allKeysSet.difference(set("a"))
+
+        self.accept("s",              self.setKey, ["cam-right",1])
+        self.accept("shift-s",        self.setKey, ["cam-right",1])
+        self.accept("s-up",           self.setKey, ["cam-right",0])
+        self.accept("shift-s-up",     self.setKey, ["cam-right",0])
+        allKeysSet = allKeysSet.difference(set("s"))
 
         # Dynamic animals
-        self.accept("b", self.setKey, ["make-bunny", 1])
-        self.accept("b-up", self.setKey, ["make-bunny", 0])
+        self.accept("b",              self.setKey, ["make-bunny", 1])
+        self.accept("shift-b",        self.setKey, ["make-bunny", 1])
+        self.accept("b-up",           self.setKey, ["make-bunny", 0])
+        self.accept("shift-b-up",     self.setKey, ["make-bunny", 0])
+        allKeysSet = allKeysSet.difference(set("b"))
+
+        # Other alphanumeric keys and their shifty friends
+        for ch in allKeysSet:
+            self.accept(ch,                    self.setKey, ["do-something", 1])
+            self.accept("shift-" + ch,         self.setKey, ["do-something", 1])
+            self.accept(ch + "-up",            self.setKey, ["do-something", 0])
+            self.accept("shift-" + ch + "-up", self.setKey, ["do-something", 0])
 
         taskMgr.add(self.move,"moveTask")
 
@@ -188,13 +227,27 @@ class World(DirectObject):
             self.ralph.setH(self.ralph.getH() - 300 * globalClock.getDt())
         if (self.keyMap["forward"]!=0):
             self.ralph.setY(self.ralph, -25 * globalClock.getDt())
+            i = 1
+            for bunny in self.bunnies:
+                bunny.setY(self.ralph.getY() + (-25 * globalClock.getDt() * i))
+                i = i + 1
 
         # If an object creation key is pressed, create an object of the desired type
         if (self.keyMap["make-bunny"]!=0):
-            self.bunny = Actor("models/Bunny2")
-            self.bunny.reparentTo(render)
-            self.bunny.setScale(0.1)
-            self.bunny.setPos(self.ralph.getPos() + 1)
+            self.keyMap["make-bunny"] = 0           # Avoid multiplying like rabbits!
+            new_bunny = Actor("models/Bunny2")
+            new_bunny.reparentTo(render)
+            new_bunny.setScale(0.22)
+            if (len(self.bunnies)==0):
+                new_bunny.setX(self.ralph.getX() + 1)
+            else:
+                new_bunny.setX(self.bunnies[len(self.bunnies)-1].getX() + 1)
+            self.bunnies.append(new_bunny)
+
+        # Handle the catch-all do-something keys
+        if (self.keyMap["do-something"]!=0):
+            self.keyMap["do-something"] = 0
+            print "Something!"
 
         # If ralph is moving, loop the run animation.
         # If he is standing still, stop the animation.
