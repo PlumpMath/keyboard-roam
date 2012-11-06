@@ -200,6 +200,14 @@ class World(DirectObject):
     def setKey(self, key, value):
         self.keyMap[key] = value
     
+    # Lines the bunnies up behind Ralph
+    def positionBunnies(self):
+        i = 1
+        for bunny in self.bunnies:
+            bunny.setX(self.ralph.getX() + (-50 * globalClock.getDt() * i))
+            bunny.setY(self.ralph.getY() + (-50 * globalClock.getDt() * i))
+            bunny.setZ(self.ralph.getZ())
+            i = i + 1
 
     # Accepts arrow keys to move either the player or the menu cursor,
     # Also deals with grid checking and collision detection
@@ -223,16 +231,15 @@ class World(DirectObject):
 
         if (self.keyMap["left"]!=0):
             self.ralph.setH(self.ralph.getH() + 300 * globalClock.getDt())
+            self.positionBunnies()
+
         if (self.keyMap["right"]!=0):
             self.ralph.setH(self.ralph.getH() - 300 * globalClock.getDt())
+            self.positionBunnies()
+
         if (self.keyMap["forward"]!=0):
             self.ralph.setY(self.ralph, -50 * globalClock.getDt())
-            i = 1
-            for bunny in self.bunnies:
-                bunny.setX(self.ralph.getX() + (-50 * globalClock.getDt() * i))
-                bunny.setY(self.ralph.getY() + (-50 * globalClock.getDt() * i))
-                bunny.setZ(self.ralph.getZ())
-                i = i + 1
+            self.positionBunnies()
 
         # If an object creation key is pressed, create an object of the desired type
         if (self.keyMap["make-bunny"]!=0):
@@ -240,15 +247,8 @@ class World(DirectObject):
             new_bunny = Actor("models/Bunny2")
             new_bunny.reparentTo(render)
             new_bunny.setScale(0.22)
-            if (len(self.bunnies)==0):
-                new_bunny.setX(self.ralph.getX() + 1)
-                new_bunny.setY(self.ralph.getY() + 1)
-                new_bunny.setZ(self.ralph.getZ())
-            else:
-                new_bunny.setX(self.bunnies[len(self.bunnies)-1].getX() + 1)
-                new_bunny.setY(self.bunnies[len(self.bunnies)-1].getY() + 1)
-                new_bunny.setZ(self.ralph.getZ())
             self.bunnies.append(new_bunny)
+            self.positionBunnies()
 
         # Handle the catch-all do-something keys
         if (self.keyMap["do-something"]!=0):
