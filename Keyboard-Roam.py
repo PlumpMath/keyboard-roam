@@ -208,12 +208,24 @@ class World(DirectObject):
     
     # Lines the bunnies up behind Ralph
     def positionBunnies(self):
+        ralphH = self.ralph.getH() * (3.1415927 / 180.0)
+        X = self.ralph.getX()
+        Y = self.ralph.getY()
+        print "Ralph at " + str(X) + ", " + str(Y) + ", heading " + str(ralphH)
+
+        dX = math.cos(ralphH)
+        dY = math.sin(ralphH)
         i = 1
         for bunny in self.bunnies:
-            bunny.setX(self.ralph.getX() + (-70 * globalClock.getDt() * i))
-            bunny.setY(self.ralph.getY() + (-70 * globalClock.getDt() * i))
+            bX = X + (dX * 2 * i)
+            bY = Y + (dY * 2 * i)
+            bunny.setX(bX)
+            bunny.setY(bY)
+            print "    Bunny at " + str(bX) + ", " + str(bY)
             bunny.setZ(self.ralph.getZ() + 0.5)
+            bunny.lookAt(self.ralph)
             i = i + 1
+        print
 
     # Accepts arrow keys to move either the player or the menu cursor,
     # Also deals with grid checking and collision detection
@@ -234,7 +246,7 @@ class World(DirectObject):
         startpos = self.ralph.getPos()
 
         # If a move-key is pressed, move ralph in the specified direction.
-
+        
         if (self.keyMap["left"]!=0):
             self.ralph.setH(self.ralph.getH() + 300 * globalClock.getDt())
             self.positionBunnies()
