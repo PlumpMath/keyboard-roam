@@ -204,9 +204,9 @@ class World(DirectObject):
     def positionBunnies(self):
         i = 1
         for bunny in self.bunnies:
-            bunny.setX(self.ralph.getX() + (-50 * globalClock.getDt() * i))
-            bunny.setY(self.ralph.getY() + (-50 * globalClock.getDt() * i))
-            bunny.setZ(self.ralph.getZ())
+            bunny.setX(self.ralph.getX() + (-70 * globalClock.getDt() * i))
+            bunny.setY(self.ralph.getY() + (-70 * globalClock.getDt() * i))
+            bunny.setZ(self.ralph.getZ() + 0.5)
             i = i + 1
 
     # Accepts arrow keys to move either the player or the menu cursor,
@@ -246,7 +246,7 @@ class World(DirectObject):
             self.keyMap["make-bunny"] = 0           # Avoid multiplying like rabbits!
             new_bunny = Actor("models/Bunny2")
             new_bunny.reparentTo(render)
-            new_bunny.setScale(0.22)
+            new_bunny.setScale(0.3)
             self.bunnies.append(new_bunny)
             self.positionBunnies()
 
