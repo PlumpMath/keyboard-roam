@@ -243,9 +243,11 @@ class World(DirectObject):
             if (len(self.bunnies)==0):
                 new_bunny.setX(self.ralph.getX() + 1)
                 new_bunny.setY(self.ralph.getY() + 1)
+                new_bunny.setZ(self.ralph.getZ())
             else:
                 new_bunny.setX(self.bunnies[len(self.bunnies)-1].getX() + 1)
                 new_bunny.setY(self.bunnies[len(self.bunnies)-1].getY() + 1)
+                new_bunny.setZ(self.ralph.getZ())
             self.bunnies.append(new_bunny)
 
         # Handle the catch-all do-something keys
