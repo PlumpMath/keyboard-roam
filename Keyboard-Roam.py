@@ -226,10 +226,12 @@ class World(DirectObject):
         if (self.keyMap["right"]!=0):
             self.ralph.setH(self.ralph.getH() - 300 * globalClock.getDt())
         if (self.keyMap["forward"]!=0):
-            self.ralph.setY(self.ralph, -25 * globalClock.getDt())
+            self.ralph.setY(self.ralph, -50 * globalClock.getDt())
             i = 1
             for bunny in self.bunnies:
-                bunny.setY(self.ralph.getY() + (-25 * globalClock.getDt() * i))
+                bunny.setX(self.ralph.getX() + (-50 * globalClock.getDt() * i))
+                bunny.setY(self.ralph.getY() + (-50 * globalClock.getDt() * i))
+                bunny.setZ(self.ralph.getZ())
                 i = i + 1
 
         # If an object creation key is pressed, create an object of the desired type
@@ -240,8 +242,10 @@ class World(DirectObject):
             new_bunny.setScale(0.22)
             if (len(self.bunnies)==0):
                 new_bunny.setX(self.ralph.getX() + 1)
+                new_bunny.setY(self.ralph.getY() + 1)
             else:
                 new_bunny.setX(self.bunnies[len(self.bunnies)-1].getX() + 1)
+                new_bunny.setY(self.bunnies[len(self.bunnies)-1].getY() + 1)
             self.bunnies.append(new_bunny)
 
         # Handle the catch-all do-something keys
