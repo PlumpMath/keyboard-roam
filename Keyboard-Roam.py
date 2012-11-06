@@ -35,7 +35,9 @@ class World(DirectObject):
 
     def __init__(self):
         
-        self.keyMap = {"left":0, "right":0, "forward":0, "cam-left":0, "cam-right":0, "make-bunny":0, "do-something":0}
+        self.keyMap = {"left":0, "right":0, "forward":0, "backward":0,
+                       "cam-left":0, "cam-right":0,
+                       "make-bunny":0, "do-something":0}
         base.win.setClearColor(Vec4(0,0,0,1))
 
         # Track all of the bunnies
@@ -48,6 +50,7 @@ class World(DirectObject):
         self.inst2 = addInstructions(0.90, "[Left Arrow]: Rotate Ralph Left")
         self.inst3 = addInstructions(0.85, "[Right Arrow]: Rotate Ralph Right")
         self.inst4 = addInstructions(0.80, "[Up Arrow]: Run Ralph Forward")
+        self.inst4 = addInstructions(0.75, "[Down Arrow]: Run Ralph Backward")
         self.inst6 = addInstructions(0.70, "[A]: Rotate Camera Left")
         self.inst7 = addInstructions(0.65, "[S]: Rotate Camera Right")
         
@@ -103,6 +106,9 @@ class World(DirectObject):
 
         self.accept("arrow_up",       self.setKey, ["forward",1])
         self.accept("arrow_up-up",    self.setKey, ["forward",0])
+
+        self.accept("arrow_down",     self.setKey, ["backward",1])
+        self.accept("arrow_down-up",  self.setKey, ["backward",0])
 
         # Create string of all ASCII characters in set form for easy manipulation
         allKeysArray = []
@@ -241,6 +247,10 @@ class World(DirectObject):
             self.ralph.setY(self.ralph, -50 * globalClock.getDt())
             self.positionBunnies()
 
+        if (self.keyMap["backward"]!=0):
+            self.ralph.setY(self.ralph, 50 * globalClock.getDt())
+            self.positionBunnies()
+
         # If an object creation key is pressed, create an object of the desired type
         if (self.keyMap["make-bunny"]!=0):
             self.keyMap["make-bunny"] = 0           # Avoid multiplying like rabbits!
@@ -258,7 +268,7 @@ class World(DirectObject):
         # If ralph is moving, loop the run animation.
         # If he is standing still, stop the animation.
 
-        if (self.keyMap["forward"]!=0) or (self.keyMap["left"]!=0) or (self.keyMap["right"]!=0):
+        if (self.keyMap["forward"]!=0) or (self.keyMap["backward"]!=0) or (self.keyMap["left"]!=0) or (self.keyMap["right"]!=0):
             if self.isMoving is False:
                 self.ralph.loop("run")
                 self.isMoving = True
