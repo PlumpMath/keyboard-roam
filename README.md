@@ -10,10 +10,8 @@ TODO
 * Make the bunnies follow the terrain
 * Use other things besides bunnies
 * Add some sounds when:
-  - Ralph moves
   - Bunny spawned
   - Ralph hits an edge
-  - Ralph hits an obstacle
 * Jump
 
 BIG CHANGES
@@ -27,3 +25,7 @@ BIG CHANGES
 2012-11-06 Jeff		Make the bunnies look at Ralph.
 
 2012-11-06 Jeff		Capture all of the non-printable keys.
+
+2012-11-06 Jeff		Get sounds from http://www.freesound.org
+	   		Implement "running" sound.
+			Implement "bump" sound.
