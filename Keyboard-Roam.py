@@ -9,7 +9,7 @@
 #
 
 import direct.directbase.DirectStart
-from panda3d.core import CollisionTraverser,CollisionNode
+from panda3d.core import CollisionTraverser,CollisionNode,AudioSound
 from panda3d.core import CollisionHandlerQueue,CollisionRay
 from panda3d.core import Filename,AmbientLight,DirectionalLight
 from panda3d.core import PandaNode,NodePath,Camera,TextNode
@@ -207,6 +207,10 @@ class World(DirectObject):
         directionalLight.setSpecularColor(Vec4(1, 1, 1, 1))
         render.setLight(render.attachNewNode(ambientLight))
         render.setLight(render.attachNewNode(directionalLight))
+
+        # Set up some sounds
+        self.runSound  = base.loader.loadSfx("sounds/54779__bevangoldswain__running-hard-surface.wav")
+        self.bumpSound = base.loader.loadSfx("sounds/31126__calethos__bump.wav")
     
     #Records the state of the arrow keys
     def setKey(self, key, value):
@@ -295,11 +299,14 @@ class World(DirectObject):
             if self.isMoving is False:
                 self.ralph.loop("run")
                 self.isMoving = True
+                if (self.runSound.status() != AudioSound.PLAYING):
+                    self.runSound.play()
         else:
             if self.isMoving:
                 self.ralph.stop()
                 self.ralph.pose("walk",5)
                 self.isMoving = False
+                self.runSound.stop()
 
         # If the camera is too far from ralph, move it closer.
         # If the camera is too close to ralph, move it farther.
@@ -333,6 +340,8 @@ class World(DirectObject):
             self.ralph.setZ(entries[0].getSurfacePoint(render).getZ())
         else:
             self.ralph.setPos(startpos)
+            if (self.bumpSound.status() != AudioSound.PLAYING):
+                self.bumpSound.play()
 
         # Keep the camera at one foot above the terrain,
         # or two feet above ralph, whichever is greater.
