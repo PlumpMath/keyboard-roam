@@ -209,8 +209,9 @@ class World(DirectObject):
         render.setLight(render.attachNewNode(directionalLight))
 
         # Set up some sounds
-        self.runSound  = base.loader.loadSfx("sounds/54779__bevangoldswain__running-hard-surface.wav")
-        self.bumpSound = base.loader.loadSfx("sounds/31126__calethos__bump.wav")
+        self.runSound   = base.loader.loadSfx("sounds/54779__bevangoldswain__running-hard-surface.wav")
+        self.bumpSound  = base.loader.loadSfx("sounds/31126__calethos__bump.wav")
+        self.spawnSound = base.loader.loadSfx("sounds/51710__bristolstories__u-chimes3.mp3")
     
     #Records the state of the arrow keys
     def setKey(self, key, value):
@@ -281,6 +282,8 @@ class World(DirectObject):
         # If an object creation key is pressed, create an object of the desired type
         if (self.keyMap["make-bunny"]!=0):
             self.keyMap["make-bunny"] = 0           # Avoid multiplying like rabbits!
+            if (self.spawnSound.status() != AudioSound.PLAYING):
+                self.spawnSound.play()
             new_bunny = Actor("models/Bunny2")
             new_bunny.reparentTo(render)
             new_bunny.setScale(0.3)
