@@ -9,7 +9,7 @@
 #
 
 import direct.directbase.DirectStart
-from panda3d.core import CollisionTraverser,CollisionNode
+from panda3d.core import CollisionTraverser,CollisionNode,AudioSound
 from panda3d.core import CollisionHandlerQueue,CollisionRay
 from panda3d.core import Filename,AmbientLight,DirectionalLight
 from panda3d.core import PandaNode,NodePath,Camera,TextNode
@@ -207,6 +207,11 @@ class World(DirectObject):
         directionalLight.setSpecularColor(Vec4(1, 1, 1, 1))
         render.setLight(render.attachNewNode(ambientLight))
         render.setLight(render.attachNewNode(directionalLight))
+
+        # Set up some sounds
+        self.runSound   = base.loader.loadSfx("sounds/54779__bevangoldswain__running-hard-surface.wav")
+        self.bumpSound  = base.loader.loadSfx("sounds/31126__calethos__bump.wav")
+        self.spawnSound = base.loader.loadSfx("sounds/51710__bristolstories__u-chimes3.mp3")
     
     #Records the state of the arrow keys
     def setKey(self, key, value):
@@ -277,6 +282,8 @@ class World(DirectObject):
         # If an object creation key is pressed, create an object of the desired type
         if (self.keyMap["make-bunny"]!=0):
             self.keyMap["make-bunny"] = 0           # Avoid multiplying like rabbits!
+            if (self.spawnSound.status() != AudioSound.PLAYING):
+                self.spawnSound.play()
             new_bunny = Actor("models/Bunny2")
             new_bunny.reparentTo(render)
             new_bunny.setScale(0.3)
@@ -295,11 +302,14 @@ class World(DirectObject):
             if self.isMoving is False:
                 self.ralph.loop("run")
                 self.isMoving = True
+                if (self.runSound.status() != AudioSound.PLAYING):
+                    self.runSound.play()
         else:
             if self.isMoving:
                 self.ralph.stop()
                 self.ralph.pose("walk",5)
                 self.isMoving = False
+                self.runSound.stop()
 
         # If the camera is too far from ralph, move it closer.
         # If the camera is too close to ralph, move it farther.
@@ -333,6 +343,8 @@ class World(DirectObject):
             self.ralph.setZ(entries[0].getSurfacePoint(render).getZ())
         else:
             self.ralph.setPos(startpos)
+            if (self.bumpSound.status() != AudioSound.PLAYING):
+                self.bumpSound.play()
 
         # Keep the camera at one foot above the terrain,
         # or two feet above ralph, whichever is greater.
