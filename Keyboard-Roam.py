@@ -37,7 +37,8 @@ class World(DirectObject):
         
         self.keyMap = {"left":0, "right":0, "forward":0, "backward":0,
                        "cam-left":0, "cam-right":0,
-                       "make-bunny":0, "do-something":0}
+                       "make-bunny":0, "do-something":0,
+                       "ignore":0}
         base.win.setClearColor(Vec4(0,0,0,1))
 
         # Track all of the bunnies
@@ -89,13 +90,18 @@ class World(DirectObject):
         # ESC key exits
         self.accept("escape", sys.exit)
 
-        # TODO - Ignore all of these:
-        # "escape", "f"+"1-12" (e.g. "f1","f2",..."f12"), "print_screen" "scroll_lock"
-        # "backspace", "insert", "home", "page_up", "num_lock"
-        # "tab",  "delete", "end", "page_down"
-        # "caps_lock", "enter", "arrow_left", "arrow_up", "arrow_down", "arrow_right"
-        # "shift", "lshift", "rshift",
-        # "control", "alt", "lcontrol", "lalt", "space", "ralt", "rcontrol"
+        ignoreKeys = ["f1", "f2", "f3", "f4", "f5", "f6",
+                      "f7", "f8", "f9", "f10", "f11", "f12",
+                      "print_screen" "scroll_lock", "backspace",
+                      "insert", "home", "page_up", "num_lock",
+                       "tab",  "delete", "end", "page_down",
+                      "caps_lock", "enter", "shift", "lshift", "rshift",
+                      "control", "alt", "lcontrol", "lalt", "space",
+                      "ralt", "rcontrol"]
+
+        for k in ignoreKeys:
+            self.accept(k,         self.setKey, ["ignore", 1])
+            self.accept(k + "-up", self.setKey, ["ignore", 0])
 
         # Accept the control keys for movement and rotation
         self.accept("arrow_left",    self.setKey, ["left",1])
@@ -230,6 +236,11 @@ class World(DirectObject):
     # Accepts arrow keys to move either the player or the menu cursor,
     # Also deals with grid checking and collision detection
     def move(self, task):
+
+        # Ignore certain keys
+        if (self.keyMap["ignore"]!=0):
+            self.keyMap["ignore"] = 0
+            print("Ignoring key...")
 
         # If the camera-left key is pressed, move camera left.
         # If the camera-right key is pressed, move camera right.
