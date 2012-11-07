@@ -35,7 +35,10 @@ class World(DirectObject):
 
     def __init__(self):
         
-        self.keyMap = {"left":0, "right":0, "forward":0, "cam-left":0, "cam-right":0, "make-bunny":0, "do-something":0}
+        self.keyMap = {"left":0, "right":0, "forward":0, "backward":0,
+                       "cam-left":0, "cam-right":0,
+                       "make-bunny":0, "do-something":0,
+                       "ignore":0}
         base.win.setClearColor(Vec4(0,0,0,1))
 
         # Track all of the bunnies
@@ -48,6 +51,7 @@ class World(DirectObject):
         self.inst2 = addInstructions(0.90, "[Left Arrow]: Rotate Ralph Left")
         self.inst3 = addInstructions(0.85, "[Right Arrow]: Rotate Ralph Right")
         self.inst4 = addInstructions(0.80, "[Up Arrow]: Run Ralph Forward")
+        self.inst4 = addInstructions(0.75, "[Down Arrow]: Run Ralph Backward")
         self.inst6 = addInstructions(0.70, "[A]: Rotate Camera Left")
         self.inst7 = addInstructions(0.65, "[S]: Rotate Camera Right")
         
@@ -86,13 +90,18 @@ class World(DirectObject):
         # ESC key exits
         self.accept("escape", sys.exit)
 
-        # TODO - Ignore all of these:
-        # "escape", "f"+"1-12" (e.g. "f1","f2",..."f12"), "print_screen" "scroll_lock"
-        # "backspace", "insert", "home", "page_up", "num_lock"
-        # "tab",  "delete", "end", "page_down"
-        # "caps_lock", "enter", "arrow_left", "arrow_up", "arrow_down", "arrow_right"
-        # "shift", "lshift", "rshift",
-        # "control", "alt", "lcontrol", "lalt", "space", "ralt", "rcontrol"
+        ignoreKeys = ["f1", "f2", "f3", "f4", "f5", "f6",
+                      "f7", "f8", "f9", "f10", "f11", "f12",
+                      "print_screen" "scroll_lock", "backspace",
+                      "insert", "home", "page_up", "num_lock",
+                       "tab",  "delete", "end", "page_down",
+                      "caps_lock", "enter", "shift", "lshift", "rshift",
+                      "control", "alt", "lcontrol", "lalt", "space",
+                      "ralt", "rcontrol"]
+
+        for k in ignoreKeys:
+            self.accept(k,         self.setKey, ["ignore", 1])
+            self.accept(k + "-up", self.setKey, ["ignore", 0])
 
         # Accept the control keys for movement and rotation
         self.accept("arrow_left",    self.setKey, ["left",1])
@@ -103,6 +112,9 @@ class World(DirectObject):
 
         self.accept("arrow_up",       self.setKey, ["forward",1])
         self.accept("arrow_up-up",    self.setKey, ["forward",0])
+
+        self.accept("arrow_down",     self.setKey, ["backward",1])
+        self.accept("arrow_down-up",  self.setKey, ["backward",0])
 
         # Create string of all ASCII characters in set form for easy manipulation
         allKeysArray = []
@@ -200,10 +212,35 @@ class World(DirectObject):
     def setKey(self, key, value):
         self.keyMap[key] = value
     
+    # Lines the bunnies up behind Ralph
+    def positionBunnies(self):
+        ralphH = self.ralph.getH() * (3.1415927 / 180.0)
+        X = self.ralph.getX()
+        Y = self.ralph.getY()
+        print "Ralph at " + str(X) + ", " + str(Y) + ", heading " + str(ralphH)
+
+        dX = math.cos(ralphH)
+        dY = math.sin(ralphH)
+        i = 1
+        for bunny in self.bunnies:
+            bX = X + (dX * 2 * i)
+            bY = Y + (dY * 2 * i)
+            bunny.setX(bX)
+            bunny.setY(bY)
+            print "    Bunny at " + str(bX) + ", " + str(bY)
+            bunny.setZ(self.ralph.getZ() + 0.5)
+            bunny.lookAt(self.ralph)
+            i = i + 1
+        print
 
     # Accepts arrow keys to move either the player or the menu cursor,
     # Also deals with grid checking and collision detection
     def move(self, task):
+
+        # Ignore certain keys
+        if (self.keyMap["ignore"]!=0):
+            self.keyMap["ignore"] = 0
+            print("Ignoring key...")
 
         # If the camera-left key is pressed, move camera left.
         # If the camera-right key is pressed, move camera right.
@@ -220,29 +257,31 @@ class World(DirectObject):
         startpos = self.ralph.getPos()
 
         # If a move-key is pressed, move ralph in the specified direction.
-
+        
         if (self.keyMap["left"]!=0):
             self.ralph.setH(self.ralph.getH() + 300 * globalClock.getDt())
+            self.positionBunnies()
+
         if (self.keyMap["right"]!=0):
             self.ralph.setH(self.ralph.getH() - 300 * globalClock.getDt())
+            self.positionBunnies()
+
         if (self.keyMap["forward"]!=0):
-            self.ralph.setY(self.ralph, -25 * globalClock.getDt())
-            i = 1
-            for bunny in self.bunnies:
-                bunny.setY(self.ralph.getY() + (-25 * globalClock.getDt() * i))
-                i = i + 1
+            self.ralph.setY(self.ralph, -50 * globalClock.getDt())
+            self.positionBunnies()
+
+        if (self.keyMap["backward"]!=0):
+            self.ralph.setY(self.ralph, 50 * globalClock.getDt())
+            self.positionBunnies()
 
         # If an object creation key is pressed, create an object of the desired type
         if (self.keyMap["make-bunny"]!=0):
             self.keyMap["make-bunny"] = 0           # Avoid multiplying like rabbits!
             new_bunny = Actor("models/Bunny2")
             new_bunny.reparentTo(render)
-            new_bunny.setScale(0.22)
-            if (len(self.bunnies)==0):
-                new_bunny.setX(self.ralph.getX() + 1)
-            else:
-                new_bunny.setX(self.bunnies[len(self.bunnies)-1].getX() + 1)
+            new_bunny.setScale(0.3)
             self.bunnies.append(new_bunny)
+            self.positionBunnies()
 
         # Handle the catch-all do-something keys
         if (self.keyMap["do-something"]!=0):
@@ -252,7 +291,7 @@ class World(DirectObject):
         # If ralph is moving, loop the run animation.
         # If he is standing still, stop the animation.
 
-        if (self.keyMap["forward"]!=0) or (self.keyMap["left"]!=0) or (self.keyMap["right"]!=0):
+        if (self.keyMap["forward"]!=0) or (self.keyMap["backward"]!=0) or (self.keyMap["left"]!=0) or (self.keyMap["right"]!=0):
             if self.isMoving is False:
                 self.ralph.loop("run")
                 self.isMoving = True
