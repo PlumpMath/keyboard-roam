@@ -10,7 +10,6 @@ TODO
 * Make the bunnies follow the terrain
 * Use other things besides bunnies
 * Add some sounds when:
-  - Bunny spawned
   - Ralph hits an edge
 * Jump
 
@@ -29,3 +28,4 @@ BIG CHANGES
 2012-11-06 Jeff		Get sounds from http://www.freesound.org
 	   		Implement "running" sound.
 			Implement "bump" sound.
+			Implement "spawn" sound."
