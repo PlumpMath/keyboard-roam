@@ -20,6 +20,8 @@ from direct.showbase.DirectObject import DirectObject
 import random, sys, os, math, string
 
 SPEED = 0.5
+PI = 3.14159
+random.seed(1)
 
 # Function to put instructions on the screen.
 def addInstructions(pos, msg):
@@ -224,8 +226,8 @@ class World(DirectObject):
         Y = self.ralph.getY()
         print "Ralph at " + str(X) + ", " + str(Y) + ", heading " + str(ralphH)
 
-        dX = math.cos(ralphH)
-        dY = math.sin(ralphH)
+        dX = math.cos(ralphH + PI/2.0)
+        dY = math.sin(ralphH + PI/2.0)
         i = 1
         for bunny in self.bunnies:
             bX = X + (dX * 2 * i)
@@ -233,7 +235,7 @@ class World(DirectObject):
             bunny.setX(bX)
             bunny.setY(bY)
             print "    Bunny at " + str(bX) + ", " + str(bY)
-            bunny.setZ(self.ralph.getZ() + 0.5)
+            bunny.setZ(self.ralph.getZ() + 0.5 + random.random())
             bunny.lookAt(self.ralph)
             i = i + 1
         print
