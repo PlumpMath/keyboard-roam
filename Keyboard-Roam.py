@@ -16,7 +16,7 @@
 # Section 3 - Move forward
 # Section 4 - Move backward
 # Section 5 - Spawn a new bunny
-# Section 6 - Move Ralph or camera (arrows)
+# Section 6 - Move or rotate Ralph (arrows)
 #
 
 import direct.directbase.DirectStart
