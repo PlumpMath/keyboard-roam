@@ -11,12 +11,12 @@
 # Per the table below, the keyboard is mapped in to 6 sections.
 # Actions are bound to the sections as follows:
 #
-# Section 1 - Spawn a new bunny
-# Section 2 - Spawn another type of object [TBD]
+# Section 1 - Camera left
+# Section 2 - Camera right
 # Section 3 - Move forward
 # Section 4 - Move backward
-# Section 5 - Camera left
-# Section 6 - Camera right
+# Section 5 - Spawn a new bunny
+# Section 6 - Move Ralph or camera (arrows)
 #
 
 import direct.directbase.DirectStart
@@ -48,7 +48,7 @@ class World(DirectObject):
 
     def __init__(self):
         
-        self.keyMap = {"left":0, "right":0, "forward":0, "backward":0,
+        self.keyMap = {"arrow_left":0, "arrow_right":0, "arrow_up":0, "arrow_down":0,
                        "cam-left":0, "cam-right":0,
                        "make-bunny":0, "do-something":0,
                        "ignore":0}
@@ -124,17 +124,13 @@ class World(DirectObject):
         #  | PRT SCR PAUSE        |
         #  | INSERT HOME PAGEUP   |
         #  | DELETE END PAGEDOWN  |
+        #  +----------------------+
+
+        #             6
+        #  +----------------------+
         #  | UP LEFT DOWN RIGHT   |
         #  +----------------------+
         #
-        #       6
-        #  +-----------+
-        #  | NUM / * - |
-        #  | 7 8 9 +   |
-        #  | 4 5 6     |
-        #  | 1 2 3     |
-        #  |   0 .     |
-        #  +-----------+
 
         Section1 = ["f1", "f2", "f3", "f4", "f5"]
 
@@ -152,53 +148,52 @@ class World(DirectObject):
 
         Section5 = ["print_screen", "scroll_lock", "pause",
                     "insert", "home", "page_up",
-                    "delete", "end", "page_down",
-                    "arrow_left", "arrow_right",
+                    "delete", "end", "page_down"]
+
+        Section6 = ["arrow_left", "arrow_right",
                     "arrow_up", "arrow_down"]
 
-        # These are problematic and don't work as desired
-        Section6 = ["num_lock", "/", "*", "-",
-                    "7", "8", "9", "+",
-                    "4", "5", "6",
-                    "1", "2", "3",
-                    "0", "."]
-
         # Map each section
+        action = "cam-left"
         for k in Section1:
-            self.accept(k,                    self.setKey, ["make-bunny", 1])
-            self.accept("shift-" + k,         self.setKey, ["make-bunny", 1])
-            self.accept(k + "-up",            self.setKey, ["make-bunny", 0])
-            self.accept("shift-" + k + "-up", self.setKey, ["make-bunny", 0])
+            self.accept(k,                    self.setKey, [action, 1])
+            self.accept("shift-" + k,         self.setKey, [action, 1])
+            self.accept(k + "-up",            self.setKey, [action, 0])
+            self.accept("shift-" + k + "-up", self.setKey, [action, 0])
 
+        action = "cam-right"
         for k in Section2:
-            self.accept(k,                    self.setKey, ["make-thing", 1])
-            self.accept("shift-" + k,         self.setKey, ["make-thing", 1])
-            self.accept(k + "-up",            self.setKey, ["make-thing", 0])
-            self.accept("shift-" + k + "-up", self.setKey, ["make-thing", 0])
+            self.accept(k,                    self.setKey, [action, 1])
+            self.accept("shift-" + k,         self.setKey, [action, 1])
+            self.accept(k + "-up",            self.setKey, [action, 0])
+            self.accept("shift-" + k + "-up", self.setKey, [action, 0])
 
+        action = "arrow_up"
         for k in Section3:
-            self.accept(k,                    self.setKey, ["forward", 1])
-            self.accept("shift-" + k,         self.setKey, ["forward", 1])
-            self.accept(k + "-up",            self.setKey, ["forward", 0])
-            self.accept("shift-" + k + "-up", self.setKey, ["forward", 0])
+            self.accept(k,                    self.setKey, [action, 1])
+            self.accept("shift-" + k,         self.setKey, [action, 1])
+            self.accept(k + "-up",            self.setKey, [action, 0])
+            self.accept("shift-" + k + "-up", self.setKey, [action, 0])
 
+        action = "arrow_down"
         for k in Section4:
-            self.accept(k,                    self.setKey, ["backward", 1])
-            self.accept("shift-" + k,         self.setKey, ["backward", 1])
-            self.accept(k + "-up",            self.setKey, ["backward", 0])
-            self.accept("shift-" + k + "-up", self.setKey, ["backward", 0])
+            self.accept(k,                    self.setKey, [action, 1])
+            self.accept("shift-" + k,         self.setKey, [action, 1])
+            self.accept(k + "-up",            self.setKey, [action, 0])
+            self.accept("shift-" + k + "-up", self.setKey, [action, 0])
 
+        action = "make-bunny"
         for k in Section5:
-            self.accept(k,                    self.setKey, ["cam-left", 1])
-            self.accept("shift-" + k,         self.setKey, ["cam-left", 1])
-            self.accept(k + "-up",            self.setKey, ["cam-left", 0])
-            self.accept("shift-" + k + "-up", self.setKey, ["cam-left", 0])
+            self.accept(k,                    self.setKey, [action, 1])
+            self.accept("shift-" + k,         self.setKey, [action, 1])
+            self.accept(k + "-up",            self.setKey, [action, 0])
+            self.accept("shift-" + k + "-up", self.setKey, [action, 0])
 
         for k in Section6:
-            self.accept(k,                    self.setKey, ["cam-right", 1])
-            self.accept("shift-" + k,         self.setKey, ["cam-right", 1])
-            self.accept(k + "-up",            self.setKey, ["cam-right", 0])
-            self.accept("shift-" + k + "-up", self.setKey, ["cam-right", 0])
+            self.accept(k,                    self.setKey, [k, 1])
+            self.accept("shift-" + k,         self.setKey, [k, 1])
+            self.accept(k + "-up",            self.setKey, [k, 0])
+            self.accept("shift-" + k + "-up", self.setKey, [k, 0])
 
         taskMgr.add(self.move,"moveTask")
 
@@ -314,19 +309,19 @@ class World(DirectObject):
 
         # If a move-key is pressed, move ralph in the specified direction.
         
-        if (self.keyMap["left"]!=0):
+        if (self.keyMap["arrow_left"]!=0):
             self.ralph.setH(self.ralph.getH() + 300 * globalClock.getDt())
             self.positionBunnies()
 
-        if (self.keyMap["right"]!=0):
+        if (self.keyMap["arrow_right"]!=0):
             self.ralph.setH(self.ralph.getH() - 300 * globalClock.getDt())
             self.positionBunnies()
 
-        if (self.keyMap["forward"]!=0):
+        if (self.keyMap["arrow_up"]!=0):
             self.ralph.setY(self.ralph, -50 * globalClock.getDt())
             self.positionBunnies()
 
-        if (self.keyMap["backward"]!=0):
+        if (self.keyMap["arrow_down"]!=0):
             self.ralph.setY(self.ralph, 50 * globalClock.getDt())
             self.positionBunnies()
 
@@ -349,7 +344,7 @@ class World(DirectObject):
         # If ralph is moving, loop the run animation.
         # If he is standing still, stop the animation.
 
-        if (self.keyMap["forward"]!=0) or (self.keyMap["backward"]!=0) or (self.keyMap["left"]!=0) or (self.keyMap["right"]!=0):
+        if (self.keyMap["arrow_up"]!=0) or (self.keyMap["arrow_down"]!=0) or (self.keyMap["arrow_left"]!=0) or (self.keyMap["arrow_right"]!=0):
             if self.isMoving is False:
                 self.ralph.loop("run")
                 self.isMoving = True
