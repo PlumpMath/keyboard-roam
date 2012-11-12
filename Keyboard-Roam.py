@@ -49,7 +49,7 @@ class World(DirectObject):
         # Post the instructions
 
         self.title = addTitle("Keyboard Roaming")
-        self.inst1 = addInstructions(0.95, "[ESC]: Quit")
+        self.inst1 = addInstructions(0.95, "[Shift+ESC]: Quit")
         self.inst2 = addInstructions(0.90, "[Left Arrow]: Rotate Ralph Left")
         self.inst3 = addInstructions(0.85, "[Right Arrow]: Rotate Ralph Right")
         self.inst4 = addInstructions(0.80, "[Up Arrow]: Run Ralph Forward")
@@ -89,8 +89,8 @@ class World(DirectObject):
         self.floater = NodePath(PandaNode("floater"))
         self.floater.reparentTo(render)
 
-        # ESC key exits
-        self.accept("escape", sys.exit)
+        # Shift+ESC key exits
+        self.accept("shift-escape", sys.exit)
 
         ignoreKeys = ["f1", "f2", "f3", "f4", "f5", "f6",
                       "f7", "f8", "f9", "f10", "f11", "f12",
