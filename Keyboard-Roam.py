@@ -92,6 +92,65 @@ class World(DirectObject):
         # Shift+ESC key exits
         self.accept("shift-escape", sys.exit)
 
+        # Tke keyboard is divided into six sections or tiles:
+        #
+        #         1                   2
+        #  +----------------+  +-------------+
+        #  | ESC f1 ... F5  |  | F6 ... F12  |              
+        #  +----------------+  +-------------+
+        #
+        #         3                         4
+        #  +----------------+  +-------------------------+
+        #  | ` 1 2 3 4 5 6  |  | 7 8 9 0 - = BACKSPACE   |
+        #  | Q W E R T Y    |  |   Y U I O P [ ] \       |
+        #  | A S D F G      |  | H J K L ; ' ENTER       |
+        #  | Z X C V B      |  | N M , . / SHIFT         |
+        #  | CTRL WIN ALT   |  | SPACE ALT WIN MENU CTRL |
+        #  +----------------+  +-------------------------+
+        #
+        #            5
+        #  +----------------------+
+        #  | PRT SCR PAUSE        |
+        #  | INSERT HOME PAGEUP   |
+        #  | DELETE END PAGEDOWN  |
+        #  | UP LEFT DOWN RIGHT   |
+        #  +----------------------+
+        #
+        #       6
+        #  +-----------+
+        #  | NUM / * - |
+        #  | 7 8 9 +   |
+        #  | 4 5 6     |
+        #  | 1 2 3     |
+        #  |   0 .     |
+        #  +-----------+
+
+        Section1 = ["escape", "f1", "f2", "f3", "f4", "f5"]
+
+        Section2 = ["f6", "f7", "f8", "f9", "f10", "f11", "f12"]
+        
+        Section3 = ["`", "1", "2", "3", "4", "5", "6",
+                    "q", "w", "e", "r", "t", "y",
+                    "a", "s", "d", "f", "g",
+                    "lshift", "shift", "z", "x", "c", "v", "b"]
+
+        Section4 = ["7", "8", "9", "0", "backspace",
+                    "y", "u", "i", "o", "p", "[", "]", "\\",
+                    "h", "j", "k", "l", ";", "'", "enter",
+                    "n", "m", ",", ".", "/", "rshift"]
+
+        Section5 = ["print_screen", "scroll_lock", "pause",
+                    "insert", "home", "page_up",
+                    "delete", "end", "page_down",
+                    "arrow_left", "arrow_right",
+                    "arrow_up", "arrow_down"]
+
+        Section6 = ["num_lock", "/", "*", "-",
+                    "7", "8", "9", "+",
+                    "4", "5", "6",
+                    "1", "2", "3",
+                    "0", "."]
+
         ignoreKeys = ["f1", "f2", "f3", "f4", "f5", "f6",
                       "f7", "f8", "f9", "f10", "f11", "f12",
                       "print_screen" "scroll_lock", "backspace",
