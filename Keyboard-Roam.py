@@ -8,6 +8,17 @@
 #   Models: Jeff Styers, Reagan Heller
 #
 
+# Per the table below, the keyboard is mapped in to 6 sections.
+# Actions are bound to the sections as follows:
+#
+# Section 1 - Spawn a new bunny
+# Section 2 - Spawn another type of object [TBD]
+# Section 3 - Move forward
+# Section 4 - Move backward
+# Section 5 - Camera left
+# Section 6 - Camera right
+#
+
 import direct.directbase.DirectStart
 from panda3d.core import CollisionTraverser,CollisionNode,AudioSound
 from panda3d.core import CollisionHandlerQueue,CollisionRay
@@ -49,7 +60,7 @@ class World(DirectObject):
         # Post the instructions
 
         self.title = addTitle("Keyboard Roaming")
-        self.inst1 = addInstructions(0.95, "[ESC]: Quit")
+        self.inst1 = addInstructions(0.95, "[Shift+ESC]: Quit")
         self.inst2 = addInstructions(0.90, "[Left Arrow]: Rotate Ralph Left")
         self.inst3 = addInstructions(0.85, "[Right Arrow]: Rotate Ralph Right")
         self.inst4 = addInstructions(0.80, "[Up Arrow]: Run Ralph Forward")
@@ -89,67 +100,105 @@ class World(DirectObject):
         self.floater = NodePath(PandaNode("floater"))
         self.floater.reparentTo(render)
 
-        # ESC key exits
-        self.accept("escape", sys.exit)
+        # Shift+ESC key exits
+        self.accept("shift-escape", sys.exit)
 
-        ignoreKeys = ["f1", "f2", "f3", "f4", "f5", "f6",
-                      "f7", "f8", "f9", "f10", "f11", "f12",
-                      "print_screen" "scroll_lock", "backspace",
-                      "insert", "home", "page_up", "num_lock",
-                       "tab",  "delete", "end", "page_down",
-                      "caps_lock", "enter", "shift", "lshift", "rshift",
-                      "control", "alt", "lcontrol", "lalt", "space",
-                      "ralt", "rcontrol"]
+        # Tke keyboard is divided into six sections or tiles:
+        #
+        #         1                   2
+        #  +----------------+  +-------------+
+        #  | f1 ... F5      |  | F6 ... F12  |              
+        #  +----------------+  +-------------+
+        #
+        #         3                         4
+        #  +----------------+  +-------------------------+
+        #  | ` 1 2 3 4 5 6  |  | 7 8 9 0 - = BACKSPACE   |
+        #  | Q W E R T Y    |  |   Y U I O P [ ] \       |
+        #  | A S D F G      |  | H J K L ; ' ENTER       |
+        #  | Z X C V B      |  | N M , . /               |
+        #  | CTRL WIN ALT   |  | SPACE ALT WIN MENU CTRL |
+        #  +----------------+  +-------------------------+
+        #
+        #            5
+        #  +----------------------+
+        #  | PRT SCR PAUSE        |
+        #  | INSERT HOME PAGEUP   |
+        #  | DELETE END PAGEDOWN  |
+        #  | UP LEFT DOWN RIGHT   |
+        #  +----------------------+
+        #
+        #       6
+        #  +-----------+
+        #  | NUM / * - |
+        #  | 7 8 9 +   |
+        #  | 4 5 6     |
+        #  | 1 2 3     |
+        #  |   0 .     |
+        #  +-----------+
 
-        for k in ignoreKeys:
-            self.accept(k,         self.setKey, ["ignore", 1])
-            self.accept(k + "-up", self.setKey, ["ignore", 0])
+        Section1 = ["f1", "f2", "f3", "f4", "f5"]
 
-        # Accept the control keys for movement and rotation
-        self.accept("arrow_left",    self.setKey, ["left",1])
-        self.accept("arrow_left-up", self.setKey, ["left",0])
+        Section2 = ["f6", "f7", "f8", "f9", "f10", "f11", "f12"]
+        
+        Section3 = ["`", "1", "2", "3", "4", "5", "6",
+                    "q", "w", "e", "r", "t", "y",
+                    "a", "s", "d", "f", "g",
+                    "lshift", "z", "x", "c", "v", "b"]
 
-        self.accept("arrow_right",    self.setKey, ["right",1])
-        self.accept("arrow_right-up", self.setKey, ["right",0])
+        Section4 = ["7", "8", "9", "0", "backspace",
+                    "y", "u", "i", "o", "p", "[", "]", "\\",
+                    "h", "j", "k", "l", ";", "'", "enter",
+                    "n", "m", ",", ".", "/", "rshift"]
 
-        self.accept("arrow_up",       self.setKey, ["forward",1])
-        self.accept("arrow_up-up",    self.setKey, ["forward",0])
+        Section5 = ["print_screen", "scroll_lock", "pause",
+                    "insert", "home", "page_up",
+                    "delete", "end", "page_down",
+                    "arrow_left", "arrow_right",
+                    "arrow_up", "arrow_down"]
 
-        self.accept("arrow_down",     self.setKey, ["backward",1])
-        self.accept("arrow_down-up",  self.setKey, ["backward",0])
+        # These are problematic and don't work as desired
+        Section6 = ["num_lock", "/", "*", "-",
+                    "7", "8", "9", "+",
+                    "4", "5", "6",
+                    "1", "2", "3",
+                    "0", "."]
 
-        # Create string of all ASCII characters in set form for easy manipulation
-        allKeysArray = []
-        for k in string.printable:
-            allKeysArray.append(k)
-        allKeysSet = set(allKeysArray)
+        # Map each section
+        for k in Section1:
+            self.accept(k,                    self.setKey, ["make-bunny", 1])
+            self.accept("shift-" + k,         self.setKey, ["make-bunny", 1])
+            self.accept(k + "-up",            self.setKey, ["make-bunny", 0])
+            self.accept("shift-" + k + "-up", self.setKey, ["make-bunny", 0])
 
-        # Accept various printable characters for control operations
-        self.accept("a",              self.setKey, ["cam-left",1])
-        self.accept("shift-a",        self.setKey, ["cam-left",1])
-        self.accept("a-up",           self.setKey, ["cam-left",0])
-        self.accept("shift-a-up",     self.setKey, ["cam-left",0])
-        allKeysSet = allKeysSet.difference(set("a"))
+        for k in Section2:
+            self.accept(k,                    self.setKey, ["make-thing", 1])
+            self.accept("shift-" + k,         self.setKey, ["make-thing", 1])
+            self.accept(k + "-up",            self.setKey, ["make-thing", 0])
+            self.accept("shift-" + k + "-up", self.setKey, ["make-thing", 0])
 
-        self.accept("s",              self.setKey, ["cam-right",1])
-        self.accept("shift-s",        self.setKey, ["cam-right",1])
-        self.accept("s-up",           self.setKey, ["cam-right",0])
-        self.accept("shift-s-up",     self.setKey, ["cam-right",0])
-        allKeysSet = allKeysSet.difference(set("s"))
+        for k in Section3:
+            self.accept(k,                    self.setKey, ["forward", 1])
+            self.accept("shift-" + k,         self.setKey, ["forward", 1])
+            self.accept(k + "-up",            self.setKey, ["forward", 0])
+            self.accept("shift-" + k + "-up", self.setKey, ["forward", 0])
 
-        # Dynamic animals
-        self.accept("b",              self.setKey, ["make-bunny", 1])
-        self.accept("shift-b",        self.setKey, ["make-bunny", 1])
-        self.accept("b-up",           self.setKey, ["make-bunny", 0])
-        self.accept("shift-b-up",     self.setKey, ["make-bunny", 0])
-        allKeysSet = allKeysSet.difference(set("b"))
+        for k in Section4:
+            self.accept(k,                    self.setKey, ["backward", 1])
+            self.accept("shift-" + k,         self.setKey, ["backward", 1])
+            self.accept(k + "-up",            self.setKey, ["backward", 0])
+            self.accept("shift-" + k + "-up", self.setKey, ["backward", 0])
 
-        # Other alphanumeric keys and their shifty friends
-        for ch in allKeysSet:
-            self.accept(ch,                    self.setKey, ["do-something", 1])
-            self.accept("shift-" + ch,         self.setKey, ["do-something", 1])
-            self.accept(ch + "-up",            self.setKey, ["do-something", 0])
-            self.accept("shift-" + ch + "-up", self.setKey, ["do-something", 0])
+        for k in Section5:
+            self.accept(k,                    self.setKey, ["cam-left", 1])
+            self.accept("shift-" + k,         self.setKey, ["cam-left", 1])
+            self.accept(k + "-up",            self.setKey, ["cam-left", 0])
+            self.accept("shift-" + k + "-up", self.setKey, ["cam-left", 0])
+
+        for k in Section6:
+            self.accept(k,                    self.setKey, ["cam-right", 1])
+            self.accept("shift-" + k,         self.setKey, ["cam-right", 1])
+            self.accept(k + "-up",            self.setKey, ["cam-right", 0])
+            self.accept("shift-" + k + "-up", self.setKey, ["cam-right", 0])
 
         taskMgr.add(self.move,"moveTask")
 
