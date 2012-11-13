@@ -11,6 +11,7 @@ TODO
 * Jump
 * Use Panda 3D physics and gravity to make bunnies move more naturally
 * More hidden fun stuff
+* Acknowledge http://alice.org/pandagallery/ as source of some models
 
 BIG CHANGES
 ===========
@@ -38,3 +39,5 @@ BIG CHANGES
 			- Move backward
 			- Spawn a new bunny
 			- Move or rotate (arrow keys)
+
+2012-11-11 Jeff		Add chicken as alternative to bunny (0.5 chance of either).
