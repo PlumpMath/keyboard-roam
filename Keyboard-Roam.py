@@ -330,7 +330,11 @@ class World(DirectObject):
             self.keyMap["make-bunny"] = 0           # Avoid multiplying like rabbits!
             if (self.spawnSound.status() != AudioSound.PLAYING):
                 self.spawnSound.play()
-            new_bunny = Actor("models/Bunny2")
+                
+            if (random.random() < 0.5):
+                new_bunny = Actor("models/Bunny2")
+            else:
+                new_bunny = Actor("models/Chicken")
             new_bunny.reparentTo(render)
             new_bunny.setScale(0.3)
             self.bunnies.append(new_bunny)

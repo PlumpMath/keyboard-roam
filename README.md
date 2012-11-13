@@ -6,12 +6,12 @@ A Panda3D based program for young children to get feedback from smashing the key
 TODO
 ====
 
-* Create better function to map a key, its shifted version, and capture doc string
 * Make the bunnies follow the terrain
 * Use other things besides bunnies
-* Add some sounds when:
-  - Ralph hits an edge
 * Jump
+* Use Panda 3D physics and gravity to make bunnies move more naturally
+* More hidden fun stuff
+* Acknowledge http://alice.org/pandagallery/ as source of some models
 
 BIG CHANGES
 ===========
@@ -29,3 +29,15 @@ BIG CHANGES
 	   		Implement "running" sound.
 			Implement "bump" sound.
 			Implement "spawn" sound."
+
+2012-11-10 Jeff		Divided the keyboard into sections, and bound each
+	   		section to an action:
+
+			- Camera left
+			- Camera right
+			- Move forward
+			- Move backward
+			- Spawn a new bunny
+			- Move or rotate (arrow keys)
+
+2012-11-11 Jeff		Add chicken as alternative to bunny (0.5 chance of either).
