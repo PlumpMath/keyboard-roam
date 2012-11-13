@@ -1,0 +1,4392 @@
+<CoordinateSystem> { y-up-left }
+
+<Texture> TextureMap { "maps/TextureMap.tif"
+	<Scalar> format { rgb }
+	<Scalar> wrap { repeat }
+}
+
+<Group> Chicken {
+	<Transform> {
+		<Matrix4> { 
+			3.2808398950131235 0.0 0.0 0.0 
+			0.0 3.2808398950131235 0.0 0.0 
+			0.0 0.0 3.2808398950131235 0.0 
+			0.0 0.0 0.0 1.0 
+		}
+	}
+	<VertexPool> Chicken.verts {
+		<Vertex> 0 { 0.5019684945504497 1.739173188922912 -0.03805773190938893
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.375374 0.425211 }
+		}
+		<Vertex> 1 { 0.6809383337422619 1.2918307477720767 -0.03805773190938893
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.375374 0.268053 }
+		}
+		<Vertex> 2 { 0.5019684945504497 1.739173188922912 -0.03805773190938893
+			<Normal> { 2.364002344176525 2.2746929581083966 0.03428650003053698 }
+			<UV> { 0.375374 0.425211 }
+		}
+		<Vertex> 3 { 0.6809383337422619 1.2918307477720767 -0.03805773190938893
+			<Normal> { 3.265331149727028 0.23725784806598205 0.21267701869248717 }
+			<UV> { 0.375374 0.268053 }
+		}
+		<Vertex> 4 { 0.5639763915632654 1.6538714721134016 -0.44176509491414856
+			<Normal> { 2.43599900579828 2.1648121474608977 -0.3786924297571808 }
+			<UV> { 0.233546 0.395243 }
+		}
+		<Vertex> 5 { 0.5639763915632654 1.6538714721134016 -0.44176509491414856
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.233546 0.395243 }
+		}
+		<Vertex> 6 { 0.5977690278545139 1.4301181191534509 -0.6914370329048378
+			<Normal> { 2.8164770815941917 0.6865821485444317 -1.5362201556758932 }
+			<UV> { 0.145833 0.316635 }
+		}
+		<Vertex> 7 { 0.5977690278545139 1.4301181191534509 -0.6914370329048378
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.145833 0.316635 }
+		}
+		<Vertex> 8 { 0.5977690278545139 1.1535432786140543 -0.6914370329048378
+			<Normal> { 2.5781259683799242 -0.9786673965729441 -1.7774664354449496 }
+			<UV> { 0.145833 0.219471 }
+		}
+		<Vertex> 9 { 0.5977690278545139 1.1535432786140543 -0.6914370329048378
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.145833 0.219471 }
+		}
+		<Vertex> 10 { 0.5977690278545139 0.9297900234307517 -0.44176509491414856
+			<Normal> { 2.5540469043211047 -1.81130067570003 -0.9797678727490383 }
+			<UV> { 0.233546 0.140863 }
+		}
+		<Vertex> 11 { 0.5977690278545139 0.9297900234307517 -0.44176509491414856
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.233546 0.140863 }
+		}
+		<Vertex> 12 { 0.6225393728164863 0.8443241396288234 -0.03805773190938893
+			<Normal> { 2.748252251955468 -1.7540985987255266 0.3662766287411292 }
+			<UV> { 0.375374 0.110838 }
+		}
+		<Vertex> 13 { 0.6225393728164863 0.8443241396288234 -0.03805773190938893
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.375374 0.110838 }
+		}
+		<Vertex> 14 { 0.5219816144682917 0.9297900234307517 0.3658136483672958
+			<Normal> { 2.7478726830069475 -1.375031831070507 1.1499538000800165 }
+			<UV> { 0.51726 0.140863 }
+		}
+		<Vertex> 15 { 0.5219816144682917 0.9297900234307517 0.3658136483672958
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.51726 0.140863 }
+		}
+		<Vertex> 16 { 0.5219816144682917 1.1535432786140543 0.6153215201977357
+			<Normal> { 2.8913341012839573 -0.5000222014786377 1.4676766719405108 }
+			<UV> { 0.604915 0.219471 }
+		}
+		<Vertex> 17 { 0.5219816144682917 1.1535432786140543 0.6153215201977357
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.604915 0.219471 }
+		}
+		<Vertex> 18 { 0.5219816144682917 1.4301181191534509 0.6153215201977357
+			<Normal> { 2.8635406979112803 0.938626490240022 1.2973145510893795 }
+			<UV> { 0.604915 0.316635 }
+		}
+		<Vertex> 19 { 0.5219816144682917 1.4301181191534509 0.6153215201977357
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.604915 0.316635 }
+		}
+		<Vertex> 20 { 0.492454044462189 1.6538714721134016 0.3658136483672958
+			<Normal> { 2.598689179720841 1.90092353370246 0.6302494526378752 }
+			<UV> { 0.51726 0.395243 }
+		}
+		<Vertex> 21 { 0.492454044462189 1.6538714721134016 0.3658136483672958
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.51726 0.395243 }
+		}
+		<Vertex> 22 { 0.21538714294045616 1.933727012531651 -0.03805773190938893
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.375374 0.49356 }
+		}
+		<Vertex> 23 { 0.21538714294045616 1.933727012531651 -0.03805773190938893
+			<Normal> { 1.0232309617708362 3.113020553676475 -0.16128357128286613 }
+			<UV> { 0.375374 0.49356 }
+		}
+		<Vertex> 24 { 0.22834645989998745 1.782644295629867 -0.6914370329048378
+			<Normal> { 0.9100162607478345 3.1464607540390936 -0.18858570810847394 }
+			<UV> { 0.145833 0.440483 }
+		}
+		<Vertex> 25 { 0.22834645989998745 1.782644295629867 -0.6914370329048378
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.145833 0.440483 }
+		}
+		<Vertex> 26 { 0.0 1.876148299908075 -1.0951443959095974
+			<Normal> { -0.1532120845253699 2.26597832100285 -2.367652737562425 }
+			<UV> { 0.0040046 0.473332 }
+		}
+		<Vertex> 27 { 0.0 1.876148299908075 -1.0951443959095974
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.0040046 0.473332 }
+		}
+		<Vertex> 28 { 0.10892388281312201 1.4425853262423218 -1.0951443959095974
+			<Normal> { 0.9705432326462012 -0.9688666564585969 -2.980478831476427 }
+			<UV> { 0.0040046 0.321015 }
+		}
+		<Vertex> 29 { 0.10892388281312201 1.4425853262423218 -1.0951443959095974
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.0040046 0.321015 }
+		}
+		<Vertex> 30 { 0.22834645989998745 0.8036417207067095 -0.606135218318679
+			<Normal> { 0.72328026682686 -2.5741448943696312 -1.901198090530756 }
+			<UV> { 0.156666 0.112946 }
+		}
+		<Vertex> 31 { 0.22834645989998745 0.8036417207067095 -0.606135218318679
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.156666 0.112946 }
+		}
+		<Vertex> 32 { 0.26722441077858133 0.5679133683051963 -0.03805773190938893
+			<Normal> { 0.9801043221956789 -3.1254131571827286 -0.18734957905500893 }
+			<UV> { 0.375374 0.0137307 }
+		}
+		<Vertex> 33 { 0.26722441077858133 0.5679133683051963 -0.03805773190938893
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.375374 0.0137307 }
+		}
+		<Vertex> 34 { 0.19931102420870714 0.7062007885748947 0.6153215201977357
+			<Normal> { 1.2046207241186007 -2.6436900998663715 1.5243692348009645 }
+			<UV> { 0.604915 0.0623131 }
+		}
+		<Vertex> 35 { 0.19931102420870714 0.7062007885748947 0.6153215201977357
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.604915 0.0623131 }
+		}
+		<Vertex> 36 { 0.19931102420870714 1.0680773948121258 1.0191929035299405
+			<Normal> { 1.4297638743568282 -1.148040017743749 2.7206047313419854 }
+			<UV> { 0.746801 0.189445 }
+		}
+		<Vertex> 37 { 0.19931102420870714 1.0680773948121258 1.0191929035299405
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.746801 0.189445 }
+		}
+		<Vertex> 38 { 0.19931102420870714 1.515584002955379 1.0191929035299405
+			<Normal> { 1.4785973457839545 1.3014902006296973 2.6236965352781803 }
+			<UV> { 0.746801 0.346661 }
+		}
+		<Vertex> 39 { 0.19931102420870714 1.515584002955379 1.0191929035299405
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.746801 0.346661 }
+		}
+		<Vertex> 40 { 0.19931102420870714 1.8774606580809345 0.6153215201977357
+			<Normal> { 1.3011698843300186 2.805237851430738 1.0961329373787707 }
+			<UV> { 0.604915 0.473793 }
+		}
+		<Vertex> 41 { 0.19931102420870714 1.8774606580809345 0.6153215201977357
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.604915 0.473793 }
+		}
+		<Vertex> 42 { -0.21538714294045616 1.933727012531651 -0.03805773190938893
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.375374 0.49356 }
+		}
+		<Vertex> 43 { -0.21538714294045616 1.933727012531651 -0.03805773190938893
+			<Normal> { -0.9142675894139007 3.147679637736223 -0.14190943398344236 }
+			<UV> { 0.375374 0.49356 }
+		}
+		<Vertex> 44 { -0.22834645989998745 1.782644295629867 -0.6914370329048378
+			<Normal> { -1.0382119087096588 3.040725673277547 -0.6633353593155468 }
+			<UV> { 0.145833 0.440483 }
+		}
+		<Vertex> 45 { -0.22834645989998745 1.782644295629867 -0.6914370329048378
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.145833 0.440483 }
+		}
+		<Vertex> 46 { -0.10892388281312201 1.4425853262423218 -1.0951443959095974
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.808101 0.466873 }
+		}
+		<Vertex> 47 { 0.0 1.876148299908075 -1.0951443959095974
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.795406 0.517405 }
+		}
+		<Vertex> 48 { -0.10892388281312201 1.4425853262423218 -1.0951443959095974
+			<Normal> { -0.9522468751183958 -1.22150430685579 -2.8922418596863433 }
+			<UV> { 0.808101 0.466873 }
+		}
+		<Vertex> 49 { 0.0 1.876148299908075 -1.0951443959095974
+			<Normal> { -0.1532120845253699 2.26597832100285 -2.367652737562425 }
+			<UV> { 0.795406 0.517405 }
+		}
+		<Vertex> 50 { 0.10892388281312201 1.4425853262423218 -1.0951443959095974
+			<Normal> { 0.9705432326462012 -0.9688666564585969 -2.980478831476427 }
+			<UV> { 0.782711 0.466873 }
+		}
+		<Vertex> 51 { 0.10892388281312201 1.4425853262423218 -1.0951443959095974
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.782711 0.466873 }
+		}
+		<Vertex> 52 { -0.22834645989998745 0.8036417207067095 -0.606135218318679
+			<Normal> { -0.864878453294749 -2.5076726133742047 -1.93066679899461 }
+			<UV> { 0.82202 0.392405 }
+		}
+		<Vertex> 53 { -0.22834645989998745 0.8036417207067095 -0.606135218318679
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.82202 0.392405 }
+		}
+		<Vertex> 54 { 0.22834645989998745 0.8036417207067095 -0.606135218318679
+			<Normal> { 0.72328026682686 -2.5741448943696312 -1.901198090530756 }
+			<UV> { 0.768793 0.392405 }
+		}
+		<Vertex> 55 { 0.22834645989998745 0.8036417207067095 -0.606135218318679
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.768793 0.392405 }
+		}
+		<Vertex> 56 { -0.22834645989998745 0.8036417207067095 -0.606135218318679
+			<Normal> { -0.864878453294749 -2.5076726133742047 -1.93066679899461 }
+			<UV> { 0.156666 0.112946 }
+		}
+		<Vertex> 57 { -0.26722441077858133 0.5679133683051963 -0.03805773190938893
+			<Normal> { -1.1162045277322685 -3.0763071822369192 -0.23309204952297563 }
+			<UV> { 0.375374 0.0137307 }
+		}
+		<Vertex> 58 { -0.26722441077858133 0.5679133683051963 -0.03805773190938893
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.375374 0.0137307 }
+		}
+		<Vertex> 59 { -0.26722441077858133 0.5679133683051963 -0.03805773190938893
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.907988 0.904665 }
+		}
+		<Vertex> 60 { 0.26722441077858133 0.5679133683051963 -0.03805773190938893
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.907988 0.904665 }
+		}
+		<Vertex> 61 { -0.19931102420870714 0.7062007885748947 0.6153215201977357
+			<Normal> { -1.275729280444268 -2.7023838573866317 1.354085237491788 }
+			<UV> { 0.604915 0.0623131 }
+		}
+		<Vertex> 62 { -0.19931102420870714 0.7062007885748947 0.6153215201977357
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.604915 0.0623131 }
+		}
+		<Vertex> 63 { -0.19931102420870714 0.7062007885748947 0.6153215201977357
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.387155 0.687811 }
+		}
+		<Vertex> 64 { 0.19931102420870714 0.7062007885748947 0.6153215201977357
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.387155 0.563759 }
+		}
+		<Vertex> 65 { -0.19931102420870714 0.7062007885748947 0.6153215201977357
+			<Normal> { -1.275729280444268 -2.7023838573866317 1.354085237491788 }
+			<UV> { 0.387155 0.687811 }
+		}
+		<Vertex> 66 { 0.19931102420870714 0.7062007885748947 0.6153215201977357
+			<Normal> { 1.2046207241186007 -2.6436900998663715 1.5243692348009645 }
+			<UV> { 0.387155 0.563759 }
+		}
+		<Vertex> 67 { -0.19931102420870714 1.0680773948121258 1.0191929035299405
+			<Normal> { -1.4785974435606029 -1.3014902006296973 2.6236965352781803 }
+			<UV> { 0.274538 0.687812 }
+		}
+		<Vertex> 68 { -0.19931102420870714 1.0680773948121258 1.0191929035299405
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.274538 0.687812 }
+		}
+		<Vertex> 69 { 0.19931102420870714 1.0680773948121258 1.0191929035299405
+			<Normal> { 1.4297638743568282 -1.148040017743749 2.7206047313419854 }
+			<UV> { 0.274538 0.563759 }
+		}
+		<Vertex> 70 { -0.19931102420870714 1.0680773948121258 1.0191929035299405
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.746801 0.189445 }
+		}
+		<Vertex> 71 { -0.19931102420870714 1.515584002955379 1.0191929035299405
+			<Normal> { -1.4438653203446097 1.1748690500347008 2.70163762600716 }
+			<UV> { 0.135273 0.687812 }
+		}
+		<Vertex> 72 { -0.19931102420870714 1.515584002955379 1.0191929035299405
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.135273 0.687812 }
+		}
+		<Vertex> 73 { 0.19931102420870714 1.0680773948121258 1.0191929035299405
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.274538 0.563759 }
+		}
+		<Vertex> 74 { 0.19931102420870714 1.515584002955379 1.0191929035299405
+			<Normal> { 1.4785973457839545 1.3014902006296973 2.6236965352781803 }
+			<UV> { 0.135273 0.563759 }
+		}
+		<Vertex> 75 { -0.19931102420870714 1.515584002955379 1.0191929035299405
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.746801 0.346661 }
+		}
+		<Vertex> 76 { -0.19931102420870714 1.8774606580809345 0.6153215201977357
+			<Normal> { -1.2188251289169934 2.7588029389619204 1.2912715631207143 }
+			<UV> { 0.0226555 0.687812 }
+		}
+		<Vertex> 77 { -0.19931102420870714 1.8774606580809345 0.6153215201977357
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.0226555 0.687812 }
+		}
+		<Vertex> 78 { 0.19931102420870714 1.515584002955379 1.0191929035299405
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.135273 0.563759 }
+		}
+		<Vertex> 79 { 0.19931102420870714 1.8774606580809345 0.6153215201977357
+			<Normal> { 1.3011698843300186 2.805237851430738 1.0961329373787707 }
+			<UV> { 0.0226553 0.563759 }
+		}
+		<Vertex> 80 { 0.19931102420870714 1.8774606580809345 0.6153215201977357
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.0226553 0.563759 }
+		}
+		<Vertex> 81 { -0.19931102420870714 1.8774606580809345 0.6153215201977357
+			<Normal> { -1.2188251289169934 2.7588029389619204 1.2912715631207143 }
+			<UV> { 0.604915 0.473793 }
+		}
+		<Vertex> 82 { -0.5019684945504497 1.739173188922912 -0.03805773190938893
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.375374 0.425211 }
+		}
+		<Vertex> 83 { -0.5019684945504497 1.739173188922912 -0.03805773190938893
+			<Normal> { -2.495896784965135 2.1176918206878224 0.22313753118508758 }
+			<UV> { 0.375374 0.425211 }
+		}
+		<Vertex> 84 { -0.5639763915632654 1.6538714721134016 -0.44176509491414856
+			<Normal> { -2.4936365799641047 2.0608208154443055 -0.5465384152304782 }
+			<UV> { 0.233546 0.395243 }
+		}
+		<Vertex> 85 { -0.5639763915632654 1.6538714721134016 -0.44176509491414856
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.233546 0.395243 }
+		}
+		<Vertex> 86 { -0.5977690278545139 1.4301181191534509 -0.6914370329048378
+			<Normal> { -2.7944317718190472 1.1537835158388132 -1.2743020347097103 }
+			<UV> { 0.145833 0.316635 }
+		}
+		<Vertex> 87 { -0.5977690278545139 1.4301181191534509 -0.6914370329048378
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.145833 0.316635 }
+		}
+		<Vertex> 88 { -0.5977690278545139 1.1535432786140543 -0.6914370329048378
+			<Normal> { -2.6174802870888096 -0.5346693078989745 -1.9044255021363106 }
+			<UV> { 0.145833 0.219471 }
+		}
+		<Vertex> 89 { -0.5977690278545139 1.1535432786140543 -0.6914370329048378
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.145833 0.219471 }
+		}
+		<Vertex> 90 { -0.10892388281312201 1.4425853262423218 -1.0951443959095974
+			<Normal> { -0.9522468751183958 -1.22150430685579 -2.8922418596863433 }
+			<UV> { 0.0040046 0.321015 }
+		}
+		<Vertex> 91 { -0.10892388281312201 1.4425853262423218 -1.0951443959095974
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.0040046 0.321015 }
+		}
+		<Vertex> 92 { -0.5977690278545139 0.9297900234307517 -0.44176509491414856
+			<Normal> { -2.3262392426413188 -1.834958517958173 -1.409059473535833 }
+			<UV> { 0.233546 0.140863 }
+		}
+		<Vertex> 93 { -0.5977690278545139 0.9297900234307517 -0.44176509491414856
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.233546 0.140863 }
+		}
+		<Vertex> 94 { -0.22834645989998745 0.8036417207067095 -0.606135218318679
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.156666 0.112946 }
+		}
+		<Vertex> 95 { -0.6225393728164863 0.8443241396288234 -0.03805773190938893
+			<Normal> { -2.6208956254123077 -1.9726532650744821 -0.05878242260710461 }
+			<UV> { 0.375374 0.110838 }
+		}
+		<Vertex> 96 { -0.6225393728164863 0.8443241396288234 -0.03805773190938893
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.375374 0.110838 }
+		}
+		<Vertex> 97 { -0.5219816144682917 0.9297900234307517 0.3658136483672958
+			<Normal> { -2.683622474119732 -1.602504803283321 0.9970246689526115 }
+			<UV> { 0.51726 0.140863 }
+		}
+		<Vertex> 98 { -0.5219816144682917 0.9297900234307517 0.3658136483672958
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.51726 0.140863 }
+		}
+		<Vertex> 99 { -0.5219816144682917 1.1535432786140543 0.6153215201977357
+			<Normal> { -2.858123871598031 -0.858891393568885 1.3628438740890483 }
+			<UV> { 0.604915 0.219471 }
+		}
+		<Vertex> 100 { -0.5219816144682917 1.1535432786140543 0.6153215201977357
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.604915 0.219471 }
+		}
+		<Vertex> 101 { -0.19931102420870714 1.0680773948121258 1.0191929035299405
+			<Normal> { -1.4785974435606029 -1.3014902006296973 2.6236965352781803 }
+			<UV> { 0.746801 0.189445 }
+		}
+		<Vertex> 102 { -0.5219816144682917 1.4301181191534509 0.6153215201977357
+			<Normal> { -2.883904640443056 0.609553069502037 1.4406420153582815 }
+			<UV> { 0.604915 0.316635 }
+		}
+		<Vertex> 103 { -0.5219816144682917 1.4301181191534509 0.6153215201977357
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.604915 0.316635 }
+		}
+		<Vertex> 104 { -0.19931102420870714 1.515584002955379 1.0191929035299405
+			<Normal> { -1.4438653203446097 1.1748690500347008 2.70163762600716 }
+			<UV> { 0.746801 0.346661 }
+		}
+		<Vertex> 105 { -0.492454044462189 1.6538714721134016 0.3658136483672958
+			<Normal> { -2.6926128413733537 1.6553001844976831 0.8796176963590887 }
+			<UV> { 0.51726 0.395243 }
+		}
+		<Vertex> 106 { -0.492454044462189 1.6538714721134016 0.3658136483672958
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.51726 0.395243 }
+		}
+		<Vertex> 107 { -0.19931102420870714 1.8774606580809345 0.6153215201977357
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.604915 0.473793 }
+		}
+		<Vertex> 108 { -0.6809383337422619 1.2918307477720767 -0.03805773190938893
+			<Normal> { 0.0 0.0 0.0 }
+			<UV> { 0.375374 0.268053 }
+		}
+		<Vertex> 109 { -0.6809383337422619 1.2918307477720767 -0.03805773190938893
+			<Normal> { -3.265331149727028 0.23725784806598205 0.21267701869248717 }
+			<UV> { 0.375374 0.268053 }
+		}
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 1 0 0 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 4 3 2 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 1 5 5 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 6 3 4 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 1 7 7 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 8 3 6 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 1 9 9 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 10 3 8 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 1 11 11 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 12 3 10 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 1 13 13 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 14 3 12 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 1 15 15 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 16 3 14 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 1 17 17 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 18 3 16 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 1 19 19 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 20 3 18 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 1 21 21 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 2 3 20 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 0 22 22 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 24 2 23 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 0 25 25 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 4 2 24 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 5 25 25 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 26 4 24 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 5 27 27 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 6 4 26 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 7 27 27 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 28 6 26 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 7 29 29 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 8 6 28 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 9 29 29 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 30 8 28 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 9 31 31 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 10 8 30 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 11 31 31 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 32 10 30 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 11 33 33 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 12 10 32 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 13 33 33 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 34 12 32 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 13 35 35 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 14 12 34 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 15 35 35 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 36 14 34 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 15 37 37 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 16 14 36 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 17 37 37 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 38 16 36 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 17 39 39 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 18 16 38 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 19 39 39 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 40 18 38 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 19 41 41 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 20 18 40 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 21 41 41 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 23 20 40 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 21 22 22 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 2 20 23 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 22 42 42 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 44 23 43 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 22 45 45 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 24 23 44 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 25 45 45 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 26 24 44 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 47 46 46 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 50 49 48 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 51 46 46 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 52 50 48 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 51 53 53 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 54 50 52 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 55 53 53 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 57 30 56 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 31 58 58 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 32 30 57 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 60 59 59 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 61 32 57 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 33 62 62 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 34 32 61 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 64 63 63 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 67 66 65 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 64 68 68 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 69 66 67 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 37 70 70 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 71 69 67 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 73 72 72 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 74 69 71 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 39 75 75 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 76 74 71 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 78 77 77 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 79 74 76 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 80 77 77 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 43 40 81 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 41 42 42 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 23 40 43 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 42 82 82 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 84 43 83 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 42 85 85 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 44 43 84 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 45 85 85 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 86 44 84 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 45 87 87 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 26 44 86 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 27 87 87 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 88 26 86 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 27 89 89 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 90 26 88 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 91 89 89 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 92 90 88 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 91 93 93 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 56 90 92 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 94 93 93 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 95 56 92 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 94 96 96 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 57 56 95 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 58 96 96 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 97 57 95 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 58 98 98 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 61 57 97 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 62 98 98 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 99 61 97 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 62 100 100 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 101 61 99 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 70 100 100 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 102 101 99 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 70 103 103 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 104 101 102 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 75 103 103 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 105 104 102 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 75 106 106 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 81 104 105 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 107 106 106 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 83 81 105 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 107 82 82 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 43 81 83 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 108 85 85 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 83 109 84 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 108 87 87 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 84 109 86 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 108 89 89 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 86 109 88 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 108 93 93 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 88 109 92 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 108 96 96 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 92 109 95 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 108 98 98 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 95 109 97 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 108 100 100 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 97 109 99 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 108 103 103 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 99 109 102 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 108 106 106 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 102 109 105 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 108 82 82 <Ref> { Chicken.verts } }
+	}
+	<Polygon>  {
+		<TRef> { TextureMap }
+		<RGBA> { 1.0 1.0 1.0 1.0 }
+		<BFace> { 0 }
+		<VertexRef> { 105 109 83 <Ref> { Chicken.verts } }
+	}
+	<Group> LeftLeg {
+		<Transform> {
+			<Matrix4> { 
+				1.0 0.0 0.0 0.0 
+				0.0 0.9999 0.0126 0.0 
+				0.0 -0.0126 0.9999 0.0 
+				-0.1046 0.2288 0.004600000000000007 1.0 
+			}
+		}
+		<VertexPool> Chicken.LeftLeg.verts {
+			<Vertex> 0 { -0.29248687719285804 0.750030774208808 -0.06546537141048127
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.898363 0.968577 }
+			}
+			<Vertex> 1 { -0.35990813708671043 0.09314357535608035 -0.03748756669262505
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.908218 0.737826 }
+			}
+			<Vertex> 2 { -0.29248687719285804 0.750030774208808 -0.06546537141048127
+				<Normal> { 1.2987738675645644 -0.17078263375644143 -3.0079156293819738 }
+				<UV> { 0.898363 0.968577 }
+			}
+			<Vertex> 3 { -0.35990813708671043 0.09314357535608035 -0.03748756669262505
+				<Normal> { -1.1956910761635449 -0.17051124313156907 -3.0503726500988475 }
+				<UV> { 0.908218 0.737826 }
+			}
+			<Vertex> 4 { -0.3784448830875277 0.7500493765779118 -0.06694160227293636
+				<Normal> { -2.4584606485416884 -0.1665500967220704 -2.1660906158783657 }
+				<UV> { 0.897845 0.968577 }
+			}
+			<Vertex> 5 { -0.3121719167340459 0.09313324068946732 -0.03666743707783234
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.976576 0.0731405 }
+			}
+			<Vertex> 6 { -0.35990813708671043 0.09314357535608035 -0.03748756669262505
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.976288 0.0731405 }
+			}
+			<Vertex> 7 { -0.3121719167340459 0.09313324068946732 -0.03666743707783234
+				<Normal> { 2.5319924035410244 -0.16748571484972996 -2.079590018420649 }
+				<UV> { 0.908506 0.737826 }
+			}
+			<Vertex> 8 { -0.267224407082624 0.7499793963410522 0.016723851784153605
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.927236 0.968577 }
+			}
+			<Vertex> 9 { -0.3121719167340459 0.09313324068946732 -0.03666743707783234
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.908506 0.737826 }
+			}
+			<Vertex> 10 { -0.267224407082624 0.7499793963410522 0.016723851784153605
+				<Normal> { 3.26261843439788 -0.15732990415752168 0.3073676727844153 }
+				<UV> { 0.927236 0.968577 }
+			}
+			<Vertex> 11 { -0.2982283464224711 0.09321268093714177 0.009103969947280374
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.902728 0.576257 }
+			}
+			<Vertex> 12 { -0.3121719167340459 0.09313324068946732 -0.03666743707783234
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.906418 0.564148 }
+			}
+			<Vertex> 13 { -0.2982283464224711 0.09321268093714177 0.009103969947280374
+				<Normal> { 2.7606098514216466 -0.15061115251311402 1.7663891655576276 }
+				<UV> { 0.924585 0.737826 }
+			}
+			<Vertex> 14 { -0.33776246722093406 0.7500133530323557 0.06610382106882373
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.944583 0.968577 }
+			}
+			<Vertex> 15 { -0.2982283464224711 0.09321268093714177 0.009103969947280374
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.924585 0.737826 }
+			}
+			<Vertex> 16 { -0.33776246722093406 0.7500133530323557 0.06610382106882373
+				<Normal> { 0.7177723126774385 -0.1437116669835596 3.1980676734233353 }
+				<UV> { 0.944583 0.968577 }
+			}
+			<Vertex> 17 { -0.33727034130879235 0.09319556048604376 0.036500379085061686
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.913058 0.583505 }
+			}
+			<Vertex> 18 { -0.33727034130879235 0.09319556048604376 0.036500379085061686
+				<Normal> { -0.8230473543089519 -0.143534329100182 3.172614999430797 }
+				<UV> { 0.934209 0.737826 }
+			}
+			<Vertex> 19 { -0.40649606542676453 0.750008333349699 0.014427493455103633
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.926429 0.968577 }
+			}
+			<Vertex> 20 { -0.33727034130879235 0.09319556048604376 0.036500379085061686
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.934209 0.737826 }
+			}
+			<Vertex> 21 { -0.40649606542676453 0.750008333349699 0.014427493455103633
+				<Normal> { -2.819050758529523 -0.15000151316671978 1.6715999447087957 }
+				<UV> { 0.926429 0.968577 }
+			}
+			<Vertex> 22 { -0.37549212608691745 0.09322921636859187 0.007791765351495465
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.923171 0.57591 }
+			}
+			<Vertex> 23 { -0.37549212608691745 0.09322921636859187 0.007791765351495465
+				<Normal> { -3.2713172316864094 -0.15628511362203112 0.1948459155593566 }
+				<UV> { 0.924124 0.737826 }
+			}
+			<Vertex> 24 { -0.3784448830875277 0.7500493765779118 -0.06694160227293636
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.897845 0.968577 }
+			}
+			<Vertex> 25 { -0.37549212608691745 0.09322921636859187 0.007791765351495465
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.924124 0.737826 }
+			}
+			<Vertex> 26 { -0.35990813708671043 0.09314357535608035 -0.03748756669262505
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.919091 0.563931 }
+			}
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 1 0 0 <Ref> { Chicken.LeftLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 4 3 2 <Ref> { Chicken.LeftLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 6 5 5 <Ref> { Chicken.LeftLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 2 3 7 <Ref> { Chicken.LeftLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 9 8 8 <Ref> { Chicken.LeftLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 2 7 10 <Ref> { Chicken.LeftLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 12 11 11 <Ref> { Chicken.LeftLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 10 7 13 <Ref> { Chicken.LeftLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 15 14 14 <Ref> { Chicken.LeftLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 10 13 16 <Ref> { Chicken.LeftLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 11 17 17 <Ref> { Chicken.LeftLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 16 13 18 <Ref> { Chicken.LeftLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 20 19 19 <Ref> { Chicken.LeftLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 16 18 21 <Ref> { Chicken.LeftLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 17 22 22 <Ref> { Chicken.LeftLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 21 18 23 <Ref> { Chicken.LeftLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 25 24 24 <Ref> { Chicken.LeftLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 21 23 4 <Ref> { Chicken.LeftLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 22 26 26 <Ref> { Chicken.LeftLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 4 23 3 <Ref> { Chicken.LeftLeg.verts } }
+		}
+		<Group> Foot {
+			<Transform> {
+				<Matrix4> { 
+					1.0 0.0 0.0 0.0 
+					0.0 0.9999 -0.0126 0.0 
+					0.0 0.0126 0.9999 0.0 
+					0.0 -0.2016 1.0E-4 1.0 
+				}
+			}
+			<VertexPool> Chicken.LeftLeg.Foot.verts {
+				<Vertex> 0 { -0.140091860173099 0.01318850666348693 0.3205573856333481
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.860888 0.471776 }
+				}
+				<Vertex> 1 { -0.28937007847616053 0.012532366852897908 -0.07525963034661233
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.900385 0.367045 }
+				}
+				<Vertex> 2 { -0.140091860173099 0.01318850666348693 0.3205573856333481
+					<Normal> { 2.9505271063702 -0.6089973745232522 1.2989431429119709 }
+					<UV> { 0.828669 0.901329 }
+				}
+				<Vertex> 3 { -0.28937007847616053 0.012532366852897908 -0.07525963034661233
+					<Normal> { 0.90041244280307 -2.8759568880725217 -1.2966182078541735 }
+					<UV> { 0.587273 0.900929 }
+				}
+				<Vertex> 4 { -0.28937007847616053 0.11472631345421701 -0.07525963034661233
+					<Normal> { 1.1750885586100301 2.3887942648141056 -1.9172809310750525 }
+					<UV> { 0.587273 0.963254 }
+				}
+				<Vertex> 5 { -0.3041338573681714 0.012532366852897908 0.08516682832788755
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.904291 0.409537 }
+				}
+				<Vertex> 6 { -0.3041338573681714 0.012532366852897908 0.08516682832788755
+					<Normal> { 0.196473594764712 -3.2134882983929183 0.6308068277718104 }
+					<UV> { 0.0266942 0.0133471 }
+				}
+				<Vertex> 7 { -0.140091860173099 0.01318850666348693 0.3205573856333481
+					<Normal> { 2.9505271063702 -0.6089973745232522 1.2989431429119709 }
+					<UV> { 0.120987 0.0136101 }
+				}
+				<Vertex> 8 { -0.3041338573681714 0.11472631345421701 0.08516682832788755
+					<Normal> { 0.7724862183955085 3.0252793350863003 1.006986775835457 }
+					<UV> { 0.0266942 0.0543124 }
+				}
+				<Vertex> 9 { -0.308727034585174 0.01318850666348693 0.3969978018935284
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.905506 0.492045 }
+				}
+				<Vertex> 10 { -0.308727034585174 0.01318850666348693 0.3969978018935284
+					<Normal> { 0.5212185166169965 -0.2958277716161728 3.2255018153794057 }
+					<UV> { 0.151694 0.0136101 }
+				}
+				<Vertex> 11 { -0.3795931751001382 0.012532366852897908 0.10042210031184218
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.924256 0.41353 }
+				}
+				<Vertex> 12 { -0.3795931751001382 0.012532366852897908 0.10042210031184218
+					<Normal> { -0.12941323611836422 -3.2122547990578254 0.6539836310680281 }
+					<UV> { 0.0327437 0.0133471 }
+				}
+				<Vertex> 13 { -0.3795931751001382 0.11472631345421701 0.10042210031184218
+					<Normal> { -0.4875137815325279 3.108584342337447 0.9284798619871594 }
+					<UV> { 0.0327437 0.0543124 }
+				}
+				<Vertex> 14 { -0.5462598458636464 0.01318850666348693 0.33466440989337765
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.968353 0.475509 }
+				}
+				<Vertex> 15 { -0.5462598458636464 0.01318850666348693 0.33466440989337765
+					<Normal> { -3.012700734801806 -0.6567324593064926 1.1207615436516791 }
+					<UV> { 0.126642 0.0136101 }
+				}
+				<Vertex> 16 { -0.3854986891013587 0.012532366852897908 -0.07525963034661233
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.925819 0.367045 }
+				}
+				<Vertex> 17 { -0.3854986891013587 0.012532366852897908 -0.07525963034661233
+					<Normal> { -0.9479092096719216 -2.0281024769971343 -2.3982003816525066 }
+					<UV> { 0.587273 0.900929 }
+				}
+				<Vertex> 18 { -0.5462598458636464 0.01318850666348693 0.33466440989337765
+					<Normal> { -3.012700734801806 -0.6567324593064926 1.1207615436516791 }
+					<UV> { 0.837273 0.901329 }
+				}
+				<Vertex> 19 { -0.3854986891013587 0.11472631345421701 -0.07525963034661233
+					<Normal> { -1.7352304433587342 2.2561346182667075 -1.631595015239622 }
+					<UV> { 0.587273 0.963254 }
+				}
+				<Vertex> 20 { -0.28937007847616053 0.012532366852897908 -0.07525963034661233
+					<Normal> { 0.90041244280307 -2.8759568880725217 -1.2966182078541735 }
+					<UV> { 0.962975 0.0447288 }
+				}
+				<Vertex> 21 { -0.3854986891013587 0.012532366852897908 -0.07525963034661233
+					<Normal> { -0.9479092096719216 -2.0281024769971343 -2.3982003816525066 }
+					<UV> { 0.962975 0.0447288 }
+				}
+				<Vertex> 22 { -0.28937007847616053 0.11472631345421701 -0.07525963034661233
+					<Normal> { 1.1750885586100301 2.3887942648141056 -1.9172809310750525 }
+					<UV> { 0.962975 0.0806325 }
+				}
+				<Vertex> 23 { -0.28937007847616053 0.11472631345421701 -0.07525963034661233
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.962975 0.0806325 }
+				}
+				<Vertex> 24 { -0.3854986891013587 0.012532366852897908 -0.07525963034661233
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.962975 0.0447288 }
+				}
+				<Vertex> 25 { -0.3854986891013587 0.11472631345421701 -0.07525963034661233
+					<Normal> { -1.7352304433587342 2.2561346182667075 -1.631595015239622 }
+					<UV> { 0.962975 0.0806325 }
+				}
+				<Vertex> 26 { -0.3041338573681714 0.012532366852897908 0.08516682832788755
+					<Normal> { 0.196473594764712 -3.2134882983929183 0.6308068277718104 }
+					<UV> { 0.904291 0.409537 }
+				}
+				<Vertex> 27 { -0.28937007847616053 0.012532366852897908 -0.07525963034661233
+					<Normal> { 0.90041244280307 -2.8759568880725217 -1.2966182078541735 }
+					<UV> { 0.900385 0.367045 }
+				}
+				<Vertex> 28 { -0.140091860173099 0.01318850666348693 0.3205573856333481
+					<Normal> { 2.9505271063702 -0.6089973745232522 1.2989431429119709 }
+					<UV> { 0.860888 0.471776 }
+				}
+				<Vertex> 29 { -0.3854986891013587 0.012532366852897908 -0.07525963034661233
+					<Normal> { -0.9479092096719216 -2.0281024769971343 -2.3982003816525066 }
+					<UV> { 0.925819 0.367045 }
+				}
+				<Vertex> 30 { -0.3795931751001382 0.012532366852897908 0.10042210031184218
+					<Normal> { -0.12941323611836422 -3.2122547990578254 0.6539836310680281 }
+					<UV> { 0.924256 0.41353 }
+				}
+				<Vertex> 31 { -0.5462598458636464 0.01318850666348693 0.33466440989337765
+					<Normal> { -3.012700734801806 -0.6567324593064926 1.1207615436516791 }
+					<UV> { 0.968353 0.475509 }
+				}
+				<Vertex> 32 { -0.308727034585174 0.01318850666348693 0.3969978018935284
+					<Normal> { 0.5212185166169965 -0.2958277716161728 3.2255018153794057 }
+					<UV> { 0.905506 0.492045 }
+				}
+				<Vertex> 33 { -0.140091860173099 0.01318850666348693 0.3205573856333481
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.828669 0.901329 }
+				}
+				<Vertex> 34 { -0.28937007847616053 0.11472631345421701 -0.07525963034661233
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.587273 0.963254 }
+				}
+				<Vertex> 35 { -0.140091860173099 0.01318850666348693 0.3205573856333481
+					<Normal> { 2.9505271063702 -0.6089973745232522 1.2989431429119709 }
+					<UV> { 0.860888 0.658635 }
+				}
+				<Vertex> 36 { -0.28937007847616053 0.11472631345421701 -0.07525963034661233
+					<Normal> { 1.1750885586100301 2.3887942648141056 -1.9172809310750525 }
+					<UV> { 0.900385 0.553904 }
+				}
+				<Vertex> 37 { -0.3041338573681714 0.11472631345421701 0.08516682832788755
+					<Normal> { 0.7724862183955085 3.0252793350863003 1.006986775835457 }
+					<UV> { 0.904291 0.596396 }
+				}
+				<Vertex> 38 { -0.5462598458636464 0.01318850666348693 0.33466440989337765
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.126642 0.0136101 }
+				}
+				<Vertex> 39 { -0.3795931751001382 0.11472631345421701 0.10042210031184218
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.0327437 0.0543124 }
+				}
+				<Vertex> 40 { -0.5462598458636464 0.01318850666348693 0.33466440989337765
+					<Normal> { -3.012700734801806 -0.6567324593064926 1.1207615436516791 }
+					<UV> { 0.968354 0.662368 }
+				}
+				<Vertex> 41 { -0.3795931751001382 0.11472631345421701 0.10042210031184218
+					<Normal> { -0.4875137815325279 3.108584342337447 0.9284798619871594 }
+					<UV> { 0.924256 0.600389 }
+				}
+				<Vertex> 42 { -0.3854986891013587 0.11472631345421701 -0.07525963034661233
+					<Normal> { -1.7352304433587342 2.2561346182667075 -1.631595015239622 }
+					<UV> { 0.925819 0.553904 }
+				}
+				<Vertex> 43 { -0.308727034585174 0.01318850666348693 0.3969978018935284
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.151694 0.0136101 }
+				}
+				<Vertex> 44 { -0.3041338573681714 0.11472631345421701 0.08516682832788755
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.0266942 0.0543124 }
+				}
+				<Vertex> 45 { -0.308727034585174 0.01318850666348693 0.3969978018935284
+					<Normal> { 0.5212185166169965 -0.2958277716161728 3.2255018153794057 }
+					<UV> { 0.905506 0.678904 }
+				}
+				<Vertex> 46 { -0.3854986891013587 0.11472631345421701 -0.07525963034661233
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.925819 0.553904 }
+				}
+				<Vertex> 47 { -0.3795931751001382 0.11472631345421701 0.10042210031184218
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.924256 0.600389 }
+				}
+				<Vertex> 48 { -0.3041338573681714 0.11472631345421701 0.08516682832788755
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.904291 0.596396 }
+				}
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 1 0 0 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 4 3 2 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 0 5 5 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 8 7 6 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 5 9 9 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 8 6 10 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 9 11 11 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 13 10 12 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 11 14 14 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 13 12 15 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 14 16 16 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 19 18 17 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 16 1 1 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 22 21 20 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 24 23 23 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 25 21 22 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 1 5 5 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 28 27 26 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 11 16 16 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 31 30 29 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 5 11 11 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 32 26 30 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 11 1 1 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 29 30 27 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 5 1 1 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 30 26 27 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 34 33 33 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 37 36 35 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 39 38 38 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 42 41 40 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 44 43 43 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 41 37 45 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 47 46 46 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 36 41 42 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 48 47 47 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 36 37 41 <Ref> { Chicken.LeftLeg.Foot.verts } }
+			}
+		}
+
+	}
+
+	<Group> RightLeg {
+		<Transform> {
+			<Matrix4> { 
+				1.0 0.0 0.0 0.0 
+				0.0 0.9999 0.0126 0.0 
+				0.0 -0.0126 0.9999 0.0 
+				0.1026 0.2288 0.004600000000000007 1.0 
+			}
+		}
+		<VertexPool> Chicken.RightLeg.verts {
+			<Vertex> 0 { 0.38730314905386115 0.750030774208808 -0.06546537141048127
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.898363 0.968577 }
+			}
+			<Vertex> 1 { 0.3198818891600087 0.09314357535608035 -0.03748756669262505
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.908218 0.737826 }
+			}
+			<Vertex> 2 { 0.38730314905386115 0.750030774208808 -0.06546537141048127
+				<Normal> { 1.2987738675645644 -0.17078263375644143 -3.0079156293819738 }
+				<UV> { 0.898363 0.968577 }
+			}
+			<Vertex> 3 { 0.3198818891600087 0.09314357535608035 -0.03748756669262505
+				<Normal> { -1.1956910761635449 -0.17051124313156907 -3.0503726500988475 }
+				<UV> { 0.908218 0.737826 }
+			}
+			<Vertex> 4 { 0.3013451431591914 0.7500493765779118 -0.06694160227293636
+				<Normal> { -2.4584606485416884 -0.1665500967220704 -2.1660906158783657 }
+				<UV> { 0.897845 0.968577 }
+			}
+			<Vertex> 5 { 0.36761810951267326 0.09313324068946732 -0.03666743707783234
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.976576 0.0731405 }
+			}
+			<Vertex> 6 { 0.3198818891600087 0.09314357535608035 -0.03748756669262505
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.976288 0.0731405 }
+			}
+			<Vertex> 7 { 0.36761810951267326 0.09313324068946732 -0.03666743707783234
+				<Normal> { 2.5319924035410244 -0.16748571484972996 -2.079590018420649 }
+				<UV> { 0.908506 0.737826 }
+			}
+			<Vertex> 8 { 0.4125656191640952 0.7499793963410522 0.016723851784153605
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.927236 0.968577 }
+			}
+			<Vertex> 9 { 0.36761810951267326 0.09313324068946732 -0.03666743707783234
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.908506 0.737826 }
+			}
+			<Vertex> 10 { 0.4125656191640952 0.7499793963410522 0.016723851784153605
+				<Normal> { 3.26261843439788 -0.15732990415752168 0.3073676727844153 }
+				<UV> { 0.927236 0.968577 }
+			}
+			<Vertex> 11 { 0.3815616798242481 0.09321268093714177 0.009103969947280374
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.902685 0.576257 }
+			}
+			<Vertex> 12 { 0.36761810951267326 0.09313324068946732 -0.03666743707783234
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.906418 0.564148 }
+			}
+			<Vertex> 13 { 0.3815616798242481 0.09321268093714177 0.009103969947280374
+				<Normal> { 2.7606098514216466 -0.15061115251311402 1.7663891655576276 }
+				<UV> { 0.924585 0.737826 }
+			}
+			<Vertex> 14 { 0.34202755902578513 0.7500133530323557 0.06610382106882373
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.944583 0.968577 }
+			}
+			<Vertex> 15 { 0.3815616798242481 0.09321268093714177 0.009103969947280374
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.924585 0.737826 }
+			}
+			<Vertex> 16 { 0.34202755902578513 0.7500133530323557 0.06610382106882373
+				<Normal> { 0.7177723126774385 -0.1437116669835596 3.1980676734233353 }
+				<UV> { 0.944583 0.968577 }
+			}
+			<Vertex> 17 { 0.3425196849379268 0.09319556048604376 0.036500379085061686
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.913058 0.583505 }
+			}
+			<Vertex> 18 { 0.3425196849379268 0.09319556048604376 0.036500379085061686
+				<Normal> { -0.8230473543089519 -0.143534329100182 3.172614999430797 }
+				<UV> { 0.934209 0.737826 }
+			}
+			<Vertex> 19 { 0.2732939608199546 0.750008333349699 0.014427493455103633
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.926429 0.968577 }
+			}
+			<Vertex> 20 { 0.3425196849379268 0.09319556048604376 0.036500379085061686
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.934209 0.737826 }
+			}
+			<Vertex> 21 { 0.2732939608199546 0.750008333349699 0.014427493455103633
+				<Normal> { -2.819050758529523 -0.15000151316671978 1.6715999447087957 }
+				<UV> { 0.926429 0.968577 }
+			}
+			<Vertex> 22 { 0.3042979001598017 0.09322921636859187 0.007791765351495465
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.923171 0.57591 }
+			}
+			<Vertex> 23 { 0.3042979001598017 0.09322921636859187 0.007791765351495465
+				<Normal> { -3.2713172316864094 -0.15628511362203112 0.1948459155593566 }
+				<UV> { 0.924124 0.737826 }
+			}
+			<Vertex> 24 { 0.3013451431591914 0.7500493765779118 -0.06694160227293636
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.897845 0.968577 }
+			}
+			<Vertex> 25 { 0.3042979001598017 0.09322921636859187 0.007791765351495465
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.924124 0.737826 }
+			}
+			<Vertex> 26 { 0.3198818891600087 0.09314357535608035 -0.03748756669262505
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.919048 0.563931 }
+			}
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 1 0 0 <Ref> { Chicken.RightLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 4 3 2 <Ref> { Chicken.RightLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 6 5 5 <Ref> { Chicken.RightLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 2 3 7 <Ref> { Chicken.RightLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 9 8 8 <Ref> { Chicken.RightLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 2 7 10 <Ref> { Chicken.RightLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 12 11 11 <Ref> { Chicken.RightLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 10 7 13 <Ref> { Chicken.RightLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 15 14 14 <Ref> { Chicken.RightLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 10 13 16 <Ref> { Chicken.RightLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 11 17 17 <Ref> { Chicken.RightLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 16 13 18 <Ref> { Chicken.RightLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 20 19 19 <Ref> { Chicken.RightLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 16 18 21 <Ref> { Chicken.RightLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 17 22 22 <Ref> { Chicken.RightLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 21 18 23 <Ref> { Chicken.RightLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 25 24 24 <Ref> { Chicken.RightLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 21 23 4 <Ref> { Chicken.RightLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 22 26 26 <Ref> { Chicken.RightLeg.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 4 23 3 <Ref> { Chicken.RightLeg.verts } }
+		}
+		<Group> Foot {
+			<Transform> {
+				<Matrix4> { 
+					1.0 0.0 0.0 0.0 
+					0.0 0.9999 -0.0126 0.0 
+					0.0 0.0126 0.9999 0.0 
+					0.0 -0.2016 1.0E-4 1.0 
+				}
+			}
+			<VertexPool> Chicken.RightLeg.Foot.verts {
+				<Vertex> 0 { 0.5396981660736202 0.01318850666348693 0.3205573856333481
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.860888 0.471776 }
+				}
+				<Vertex> 1 { 0.3904199477705586 0.012532366852897908 -0.07525963034661233
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.900341 0.367045 }
+				}
+				<Vertex> 2 { 0.5396981660736202 0.01318850666348693 0.3205573856333481
+					<Normal> { 2.9505271063702 -0.6089973745232522 1.2989431429119709 }
+					<UV> { 0.828669 0.901329 }
+				}
+				<Vertex> 3 { 0.3904199477705586 0.012532366852897908 -0.07525963034661233
+					<Normal> { 0.90041244280307 -2.8759568880725217 -1.2966182078541735 }
+					<UV> { 0.587273 0.900929 }
+				}
+				<Vertex> 4 { 0.3904199477705586 0.11472631345421701 -0.07525963034661233
+					<Normal> { 1.1750885586100301 2.3887942648141056 -1.9172809310750525 }
+					<UV> { 0.587273 0.963254 }
+				}
+				<Vertex> 5 { 0.3756561688785478 0.012532366852897908 0.08516682832788755
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.904248 0.409537 }
+				}
+				<Vertex> 6 { 0.3756561688785478 0.012532366852897908 0.08516682832788755
+					<Normal> { 0.196473594764712 -3.2134882983929183 0.6308068277718104 }
+					<UV> { 0.0266942 0.0133471 }
+				}
+				<Vertex> 7 { 0.5396981660736202 0.01318850666348693 0.3205573856333481
+					<Normal> { 2.9505271063702 -0.6089973745232522 1.2989431429119709 }
+					<UV> { 0.120987 0.0136101 }
+				}
+				<Vertex> 8 { 0.3756561688785478 0.11472631345421701 0.08516682832788755
+					<Normal> { 0.7724862183955085 3.0252793350863003 1.006986775835457 }
+					<UV> { 0.0266942 0.0543124 }
+				}
+				<Vertex> 9 { 0.37106299166154516 0.01318850666348693 0.3969978018935284
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.905506 0.492045 }
+				}
+				<Vertex> 10 { 0.37106299166154516 0.01318850666348693 0.3969978018935284
+					<Normal> { 0.5212185166169965 -0.2958277716161728 3.2255018153794057 }
+					<UV> { 0.151694 0.0136101 }
+				}
+				<Vertex> 11 { 0.30019685114658096 0.012532366852897908 0.10042210031184218
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.924213 0.41353 }
+				}
+				<Vertex> 12 { 0.30019685114658096 0.012532366852897908 0.10042210031184218
+					<Normal> { -0.12941323611836422 -3.2122547990578254 0.6539836310680281 }
+					<UV> { 0.0327437 0.0133471 }
+				}
+				<Vertex> 13 { 0.30019685114658096 0.11472631345421701 0.10042210031184218
+					<Normal> { -0.4875137815325279 3.108584342337447 0.9284798619871594 }
+					<UV> { 0.0327437 0.0543124 }
+				}
+				<Vertex> 14 { 0.13353018038307274 0.01318850666348693 0.33466440989337765
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.968353 0.475509 }
+				}
+				<Vertex> 15 { 0.13353018038307274 0.01318850666348693 0.33466440989337765
+					<Normal> { -3.012700734801806 -0.6567324593064926 1.1207615436516791 }
+					<UV> { 0.126642 0.0136101 }
+				}
+				<Vertex> 16 { 0.29429133714536043 0.012532366852897908 -0.07525963034661233
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.925819 0.367045 }
+				}
+				<Vertex> 17 { 0.29429133714536043 0.012532366852897908 -0.07525963034661233
+					<Normal> { -0.9479092096719216 -2.0281024769971343 -2.3982003816525066 }
+					<UV> { 0.587273 0.900929 }
+				}
+				<Vertex> 18 { 0.13353018038307274 0.01318850666348693 0.33466440989337765
+					<Normal> { -3.012700734801806 -0.6567324593064926 1.1207615436516791 }
+					<UV> { 0.837273 0.901329 }
+				}
+				<Vertex> 19 { 0.29429133714536043 0.11472631345421701 -0.07525963034661233
+					<Normal> { -1.7352304433587342 2.2561346182667075 -1.631595015239622 }
+					<UV> { 0.587273 0.963254 }
+				}
+				<Vertex> 20 { 0.3904199477705586 0.012532366852897908 -0.07525963034661233
+					<Normal> { 0.90041244280307 -2.8759568880725217 -1.2966182078541735 }
+					<UV> { 0.962975 0.0447288 }
+				}
+				<Vertex> 21 { 0.29429133714536043 0.012532366852897908 -0.07525963034661233
+					<Normal> { -0.9479092096719216 -2.0281024769971343 -2.3982003816525066 }
+					<UV> { 0.962975 0.0447288 }
+				}
+				<Vertex> 22 { 0.3904199477705586 0.11472631345421701 -0.07525963034661233
+					<Normal> { 1.1750885586100301 2.3887942648141056 -1.9172809310750525 }
+					<UV> { 0.962975 0.0806325 }
+				}
+				<Vertex> 23 { 0.3904199477705586 0.11472631345421701 -0.07525963034661233
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.962975 0.0806325 }
+				}
+				<Vertex> 24 { 0.29429133714536043 0.012532366852897908 -0.07525963034661233
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.962975 0.0447288 }
+				}
+				<Vertex> 25 { 0.29429133714536043 0.11472631345421701 -0.07525963034661233
+					<Normal> { -1.7352304433587342 2.2561346182667075 -1.631595015239622 }
+					<UV> { 0.962975 0.0806325 }
+				}
+				<Vertex> 26 { 0.3756561688785478 0.012532366852897908 0.08516682832788755
+					<Normal> { 0.196473594764712 -3.2134882983929183 0.6308068277718104 }
+					<UV> { 0.904248 0.409537 }
+				}
+				<Vertex> 27 { 0.3904199477705586 0.012532366852897908 -0.07525963034661233
+					<Normal> { 0.90041244280307 -2.8759568880725217 -1.2966182078541735 }
+					<UV> { 0.900341 0.367045 }
+				}
+				<Vertex> 28 { 0.5396981660736202 0.01318850666348693 0.3205573856333481
+					<Normal> { 2.9505271063702 -0.6089973745232522 1.2989431429119709 }
+					<UV> { 0.860888 0.471776 }
+				}
+				<Vertex> 29 { 0.29429133714536043 0.012532366852897908 -0.07525963034661233
+					<Normal> { -0.9479092096719216 -2.0281024769971343 -2.3982003816525066 }
+					<UV> { 0.925819 0.367045 }
+				}
+				<Vertex> 30 { 0.30019685114658096 0.012532366852897908 0.10042210031184218
+					<Normal> { -0.12941323611836422 -3.2122547990578254 0.6539836310680281 }
+					<UV> { 0.924213 0.41353 }
+				}
+				<Vertex> 31 { 0.13353018038307274 0.01318850666348693 0.33466440989337765
+					<Normal> { -3.012700734801806 -0.6567324593064926 1.1207615436516791 }
+					<UV> { 0.968353 0.475509 }
+				}
+				<Vertex> 32 { 0.37106299166154516 0.01318850666348693 0.3969978018935284
+					<Normal> { 0.5212185166169965 -0.2958277716161728 3.2255018153794057 }
+					<UV> { 0.905506 0.492045 }
+				}
+				<Vertex> 33 { 0.5396981660736202 0.01318850666348693 0.3205573856333481
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.828669 0.901329 }
+				}
+				<Vertex> 34 { 0.3904199477705586 0.11472631345421701 -0.07525963034661233
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.587273 0.963254 }
+				}
+				<Vertex> 35 { 0.5396981660736202 0.01318850666348693 0.3205573856333481
+					<Normal> { 2.9505271063702 -0.6089973745232522 1.2989431429119709 }
+					<UV> { 0.860888 0.658635 }
+				}
+				<Vertex> 36 { 0.3904199477705586 0.11472631345421701 -0.07525963034661233
+					<Normal> { 1.1750885586100301 2.3887942648141056 -1.9172809310750525 }
+					<UV> { 0.900341 0.553904 }
+				}
+				<Vertex> 37 { 0.3756561688785478 0.11472631345421701 0.08516682832788755
+					<Normal> { 0.7724862183955085 3.0252793350863003 1.006986775835457 }
+					<UV> { 0.904248 0.596396 }
+				}
+				<Vertex> 38 { 0.13353018038307274 0.01318850666348693 0.33466440989337765
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.126642 0.0136101 }
+				}
+				<Vertex> 39 { 0.30019685114658096 0.11472631345421701 0.10042210031184218
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.0327437 0.0543124 }
+				}
+				<Vertex> 40 { 0.13353018038307274 0.01318850666348693 0.33466440989337765
+					<Normal> { -3.012700734801806 -0.6567324593064926 1.1207615436516791 }
+					<UV> { 0.968354 0.662368 }
+				}
+				<Vertex> 41 { 0.30019685114658096 0.11472631345421701 0.10042210031184218
+					<Normal> { -0.4875137815325279 3.108584342337447 0.9284798619871594 }
+					<UV> { 0.924213 0.600389 }
+				}
+				<Vertex> 42 { 0.29429133714536043 0.11472631345421701 -0.07525963034661233
+					<Normal> { -1.7352304433587342 2.2561346182667075 -1.631595015239622 }
+					<UV> { 0.925819 0.553904 }
+				}
+				<Vertex> 43 { 0.37106299166154516 0.01318850666348693 0.3969978018935284
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.151694 0.0136101 }
+				}
+				<Vertex> 44 { 0.3756561688785478 0.11472631345421701 0.08516682832788755
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.0266942 0.0543124 }
+				}
+				<Vertex> 45 { 0.37106299166154516 0.01318850666348693 0.3969978018935284
+					<Normal> { 0.5212185166169965 -0.2958277716161728 3.2255018153794057 }
+					<UV> { 0.905506 0.678904 }
+				}
+				<Vertex> 46 { 0.29429133714536043 0.11472631345421701 -0.07525963034661233
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.925819 0.553904 }
+				}
+				<Vertex> 47 { 0.30019685114658096 0.11472631345421701 0.10042210031184218
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.924213 0.600389 }
+				}
+				<Vertex> 48 { 0.3756561688785478 0.11472631345421701 0.08516682832788755
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.904248 0.596396 }
+				}
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 1 0 0 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 4 3 2 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 0 5 5 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 8 7 6 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 5 9 9 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 8 6 10 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 9 11 11 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 13 10 12 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 11 14 14 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 13 12 15 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 14 16 16 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 19 18 17 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 16 1 1 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 22 21 20 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 24 23 23 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 25 21 22 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 1 5 5 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 28 27 26 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 11 16 16 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 31 30 29 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 5 11 11 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 32 26 30 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 11 1 1 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 29 30 27 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 5 1 1 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 30 26 27 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 34 33 33 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 37 36 35 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 39 38 38 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 42 41 40 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 44 43 43 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 41 37 45 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 47 46 46 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 36 41 42 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 48 47 47 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 36 37 41 <Ref> { Chicken.RightLeg.Foot.verts } }
+			}
+		}
+
+	}
+
+	<Group> Neck {
+		<Transform> {
+			<Matrix4> { 
+				1.0 0.0 0.0 0.0 
+				0.0 0.9999 0.0126 0.0 
+				0.0 -0.0126 0.9999 0.0 
+				0.0 0.4854 0.20679999999999998 1.0 
+			}
+		}
+		<VertexPool> Chicken.Neck.verts {
+			<Vertex> 0 { -0.03904199565020133 2.261205680829686 1.003031477659667
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.912425 0.286037 }
+			}
+			<Vertex> 1 { -0.2544291385906575 1.5434057586943257 0.6834365486407152
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.821329 0.0813983 }
+			}
+			<Vertex> 2 { -0.03904199565020133 2.261205680829686 1.003031477659667
+				<Normal> { -1.7969640768731987 2.005874865050391 -1.8737623858170247 }
+				<UV> { 0.912425 0.286037 }
+			}
+			<Vertex> 3 { -0.2544291385906575 1.5434057586943257 0.6834365486407152
+				<Normal> { -3.16909272370376 0.8062301695522831 -0.2659412261142623 }
+				<UV> { 0.821329 0.0813983 }
+			}
+			<Vertex> 4 { -0.12811680331708877 2.1847226365843393 1.1229737686760861
+				<Normal> { -3.1741047546932393 0.05758743418754613 0.8280252646104852 }
+				<UV> { 0.94661 0.264245 }
+			}
+			<Vertex> 5 { -0.06873359820583048 1.7025668322013354 0.43362292857581547
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.750107 0.126759 }
+			}
+			<Vertex> 6 { -0.06873359820583048 1.7025668322013354 0.43362292857581547
+				<Normal> { -0.19730365739797984 2.3427545646513543 -2.2882396806999457 }
+				<UV> { 0.750107 0.126759 }
+			}
+			<Vertex> 7 { 0.10515091417655545 2.2319203739120503 1.048760953818856
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.925472 0.277713 }
+			}
+			<Vertex> 8 { 0.10515091417655545 2.2319203739120503 1.048760953818856
+				<Normal> { 2.1609085125560212 1.8757606887324592 -1.6048851343179782 }
+				<UV> { 0.925472 0.277713 }
+			}
+			<Vertex> 9 { 0.23146326167220518 1.6416502944468778 0.5289895518834451
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.777324 0.109457 }
+			}
+			<Vertex> 10 { 0.23146326167220518 1.6416502944468778 0.5289895518834451
+				<Normal> { 2.9868380291255443 1.1991919748719753 -0.6360592855888558 }
+				<UV> { 0.777324 0.109457 }
+			}
+			<Vertex> 11 { 0.10515091417655545 2.137524899564625 1.1971865590915984
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.967747 0.250777 }
+			}
+			<Vertex> 12 { 0.10515091417655545 2.137524899564625 1.1971865590915984
+				<Normal> { 2.996962214392314 -0.14202109802015656 1.327359607868542 }
+				<UV> { 0.967747 0.250777 }
+			}
+			<Vertex> 13 { 0.23146326167220518 1.4449972006176988 0.8378814838574881
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.865381 0.0533866 }
+			}
+			<Vertex> 14 { 0.23146326167220518 1.4449972006176988 0.8378814838574881
+				<Normal> { 2.173939010915481 -0.8072960274514016 2.3207592906386365 }
+				<UV> { 0.865381 0.0533866 }
+			}
+			<Vertex> 15 { -0.03904199565020133 2.1084036457638335 1.2429180780811886
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.980794 0.242453 }
+			}
+			<Vertex> 16 { -0.03904199565020133 2.1084036457638335 1.2429180780811886
+				<Normal> { -0.19459117428837175 -1.2808614329794261 3.0141328289283544 }
+				<UV> { 0.980794 0.242453 }
+			}
+			<Vertex> 17 { -0.06873359820583048 1.3842426180018215 0.93341421464023
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.892597 0.0360372 }
+			}
+			<Vertex> 18 { -0.06873359820583048 1.3842426180018215 0.93341421464023
+				<Normal> { -1.8095493003765117 -1.0124262583654697 2.5424645202249057 }
+				<UV> { 0.892597 0.0360372 }
+			}
+			<Vertex> 19 { -0.12811680331708877 2.1847226365843393 1.1229737686760861
+				<Normal> { 0.0 0.0 0.0 }
+				<UV> { 0.94661 0.264245 }
+			}
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 1 0 0 <Ref> { Chicken.Neck.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 4 3 2 <Ref> { Chicken.Neck.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 1 5 5 <Ref> { Chicken.Neck.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 2 3 6 <Ref> { Chicken.Neck.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 5 7 7 <Ref> { Chicken.Neck.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 2 6 8 <Ref> { Chicken.Neck.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 5 9 9 <Ref> { Chicken.Neck.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 8 6 10 <Ref> { Chicken.Neck.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 9 11 11 <Ref> { Chicken.Neck.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 8 10 12 <Ref> { Chicken.Neck.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 9 13 13 <Ref> { Chicken.Neck.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 12 10 14 <Ref> { Chicken.Neck.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 13 15 15 <Ref> { Chicken.Neck.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 12 14 16 <Ref> { Chicken.Neck.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 13 17 17 <Ref> { Chicken.Neck.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 16 14 18 <Ref> { Chicken.Neck.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 17 19 19 <Ref> { Chicken.Neck.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 16 18 4 <Ref> { Chicken.Neck.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 17 1 1 <Ref> { Chicken.Neck.verts } }
+		}
+		<Polygon>  {
+			<TRef> { TextureMap }
+			<RGBA> { 1.0 1.0 1.0 1.0 }
+			<BFace> { 0 }
+			<VertexRef> { 4 18 3 <Ref> { Chicken.Neck.verts } }
+		}
+		<Group> Head {
+			<Transform> {
+				<Matrix4> { 
+					1.0 0.0 0.0 0.0 
+					0.0 0.9999 -0.0126 0.0 
+					0.0 0.0126 0.9999 0.0 
+					0.0 0.1734 0.1339 1.0 
+				}
+			}
+			<VertexPool> Chicken.Neck.Head.verts {
+				<Vertex> 0 { 0.18963254157092002 2.484715829934503 1.258102945780533
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.625462 0.797645 }
+				}
+				<Vertex> 1 { 0.26804461019245657 2.284756883508735 1.258102945780533
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.625462 0.684597 }
+				}
+				<Vertex> 2 { 0.18963254157092002 2.484715829934503 1.258102945780533
+					<Normal> { 2.1806392535137067 2.4424178521104216 -0.20693564594361316 }
+					<UV> { 0.625462 0.797645 }
+				}
+				<Vertex> 3 { 0.26804461019245657 2.284756883508735 1.258102945780533
+					<Normal> { 3.2808398950131235 1.307550739022163E-8 -2.3726814654899316E-4 }
+					<UV> { 0.625462 0.684597 }
+				}
+				<Vertex> 4 { 0.18963254157092002 2.4261552632329995 1.0771720783050007
+					<Normal> { 2.3012827309410717 1.6382371001976272 -1.668453140821789 }
+					<UV> { 0.523088 0.76451 }
+				}
+				<Vertex> 5 { 0.18963254157092002 2.4261552632329995 1.0771720783050007
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.523088 0.76451 }
+				}
+				<Vertex> 6 { 0.18963254157092002 2.284756883508735 1.0022079796740402
+					<Normal> { 2.405202099344549 -0.3137838838160486 -2.209081741918043 }
+					<UV> { 0.480672 0.684597 }
+				}
+				<Vertex> 7 { 0.18963254157092002 2.284756883508735 1.0022079796740402
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.480672 0.684597 }
+				}
+				<Vertex> 8 { 0.18963254157092002 2.1433585190614424 1.0771720783050007
+					<Normal> { 2.2671668939390206 -1.9824430559848476 -1.3012763886422067 }
+					<UV> { 0.523088 0.604591 }
+				}
+				<Vertex> 9 { 0.18963254157092002 2.1433585190614424 1.0771720783050007
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.523088 0.604591 }
+				}
+				<Vertex> 10 { 0.18963254157092002 2.0847979431937556 1.258102945780533
+					<Normal> { 2.1804964996072567 -2.4425842611044235 0.20647364588550068 }
+					<UV> { 0.625462 0.571457 }
+				}
+				<Vertex> 11 { 0.18963254157092002 2.0847979431937556 1.258102945780533
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.625462 0.571457 }
+				}
+				<Vertex> 12 { 0.18963254157092002 2.1433585190614424 1.4391978268209527
+					<Normal> { 2.3009700412199567 -1.6389116334817748 1.6682220063553845 }
+					<UV> { 0.727836 0.604591 }
+				}
+				<Vertex> 13 { 0.18963254157092002 2.1433585190614424 1.4391978268209527
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.727836 0.604591 }
+				}
+				<Vertex> 14 { 0.18963254157092002 2.284756883508735 1.5141619254519134
+					<Normal> { 2.4053691018597663 0.31379290333995963 2.2088987115791645 }
+					<UV> { 0.770252 0.684597 }
+				}
+				<Vertex> 15 { 0.18963254157092002 2.284756883508735 1.5141619254519134
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.770252 0.684597 }
+				}
+				<Vertex> 16 { 0.18963254157092002 2.4261552632329995 1.4391978268209527
+					<Normal> { 2.267310038952064 1.9825650762107667 1.3008411049516682 }
+					<UV> { 0.727836 0.76451 }
+				}
+				<Vertex> 17 { 0.18963254157092002 2.4261552632329995 1.4391978268209527
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.727836 0.76451 }
+				}
+				<Vertex> 18 { 0.0 2.567553606292532 1.258102945780533
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.623208 0.844516 }
+				}
+				<Vertex> 19 { 0.18963254157092002 2.484715829934503 1.258102945780533
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.623208 0.797645 }
+				}
+				<Vertex> 20 { 0.0 2.567553606292532 1.258102945780533
+					<Normal> { -2.073705957023738E-5 3.2807046259842525 -3.5086474592248285E-4 }
+					<UV> { 0.623208 0.844516 }
+				}
+				<Vertex> 21 { 0.18963254157092002 2.484715829934503 1.258102945780533
+					<Normal> { 2.1806392535137067 2.4424178521104216 -0.20693564594361316 }
+					<UV> { 0.623208 0.797645 }
+				}
+				<Vertex> 22 { 0.0 2.484715829934503 1.0022079796740402
+					<Normal> { -0.038234232203775816 2.5253204272703162 -2.093876071853162 }
+					<UV> { 0.478418 0.797645 }
+				}
+				<Vertex> 23 { 0.0 2.484715829934503 1.0022079796740402
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.478418 0.797645 }
+				}
+				<Vertex> 24 { 0.18963254157092002 2.4261552632329995 1.0771720783050007
+					<Normal> { 2.3012827309410717 1.6382371001976272 -1.668453140821789 }
+					<UV> { 0.520834 0.76451 }
+				}
+				<Vertex> 25 { 0.18963254157092002 2.4261552632329995 1.0771720783050007
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.520834 0.76451 }
+				}
+				<Vertex> 26 { 0.0 2.484715829934503 1.0022079796740402
+					<Normal> { -0.038234232203775816 2.5253204272703162 -2.093876071853162 }
+					<UV> { 0.480672 0.797645 }
+				}
+				<Vertex> 27 { 0.0 2.284756883508735 0.8962412108294684
+					<Normal> { 8.227870994616376E-8 -6.170648965314005E-8 -3.2807046259842525 }
+					<UV> { 0.420714 0.684597 }
+				}
+				<Vertex> 28 { 0.0 2.284756883508735 0.8962412108294684
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.420714 0.684597 }
+				}
+				<Vertex> 29 { 0.0 2.0847979431937556 1.0022079796740402
+					<Normal> { 0.038234308591782264 -2.52532062281555 -2.093876071853162 }
+					<UV> { 0.480672 0.571457 }
+				}
+				<Vertex> 30 { 0.0 2.0847979431937556 1.0022079796740402
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.480672 0.571457 }
+				}
+				<Vertex> 31 { 0.0 2.0019601485033607 1.258102945780533
+					<Normal> { 1.1305292468873071E-4 -3.2807046259842525 -1.306314966399878E-4 }
+					<UV> { 0.625462 0.524585 }
+				}
+				<Vertex> 32 { 0.0 2.0019601485033607 1.258102945780533
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.625462 0.524585 }
+				}
+				<Vertex> 33 { 0.0 2.0847979431937556 1.513997911887026
+					<Normal> { -0.03815944528994285 -2.5257928645552847 2.093307621858375 }
+					<UV> { 0.770252 0.571457 }
+				}
+				<Vertex> 34 { 0.0 2.0847979431937556 1.513997911887026
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.770252 0.571457 }
+				}
+				<Vertex> 35 { 0.0 2.284756883508735 1.620128694296485
+					<Normal> { -2.689839651569201E-4 -8.008916447967184E-4 3.2807046259842525 }
+					<UV> { 0.83021 0.684597 }
+				}
+				<Vertex> 36 { 0.0 2.284756883508735 1.620128694296485
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.83021 0.684597 }
+				}
+				<Vertex> 37 { 0.0 2.484715829934503 1.5141619254519134
+					<Normal> { 0.03823391748518925 2.5255531260985915 2.0935956599878285 }
+					<UV> { 0.770252 0.797645 }
+				}
+				<Vertex> 38 { 0.0 2.484715829934503 1.5141619254519134
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.770252 0.797645 }
+				}
+				<Vertex> 39 { 0.0 2.484715829934503 1.5141619254519134
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.767998 0.797645 }
+				}
+				<Vertex> 40 { 0.18963254157092002 2.4261552632329995 1.4391978268209527
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.725582 0.76451 }
+				}
+				<Vertex> 41 { 0.0 2.484715829934503 1.5141619254519134
+					<Normal> { 0.03823391748518925 2.5255531260985915 2.0935956599878285 }
+					<UV> { 0.767998 0.797645 }
+				}
+				<Vertex> 42 { 0.18963254157092002 2.4261552632329995 1.4391978268209527
+					<Normal> { 2.267310038952064 1.9825650762107667 1.3008411049516682 }
+					<UV> { 0.725582 0.76451 }
+				}
+				<Vertex> 43 { -0.18963254157092002 2.484715829934503 1.258102945780533
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.623208 0.797645 }
+				}
+				<Vertex> 44 { -0.18963254157092002 2.484715829934503 1.258102945780533
+					<Normal> { -2.180608942752748 2.4424964612944278 0.2063273291642763 }
+					<UV> { 0.623208 0.797645 }
+				}
+				<Vertex> 45 { -0.18963254157092002 2.4261552632329995 1.0771720783050007
+					<Normal> { -2.2671670894923173 1.9824430559848476 -1.3012762908695898 }
+					<UV> { 0.520834 0.76451 }
+				}
+				<Vertex> 46 { -0.18963254157092002 2.4261552632329995 1.0771720783050007
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.520834 0.76451 }
+				}
+				<Vertex> 47 { -0.18963254157092002 2.4261552632329995 1.0771720783050007
+					<Normal> { -2.2671670894923173 1.9824430559848476 -1.3012762908695898 }
+					<UV> { 0.523088 0.76451 }
+				}
+				<Vertex> 48 { -0.18963254157092002 2.284756883508735 1.0022079796740402
+					<Normal> { -2.405202099344549 0.31378378604343166 -2.209081937463277 }
+					<UV> { 0.480672 0.684597 }
+				}
+				<Vertex> 49 { -0.18963254157092002 2.284756883508735 1.0022079796740402
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.480672 0.684597 }
+				}
+				<Vertex> 50 { 0.0 2.484715829934503 1.0022079796740402
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.480672 0.797645 }
+				}
+				<Vertex> 51 { -0.18963254157092002 2.1433585190614424 1.0771720783050007
+					<Normal> { -2.3012827309410717 -1.6382371001976272 -1.668453336367023 }
+					<UV> { 0.523088 0.604591 }
+				}
+				<Vertex> 52 { -0.18963254157092002 2.1433585190614424 1.0771720783050007
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.523088 0.604591 }
+				}
+				<Vertex> 53 { -0.18963254157092002 2.0847979431937556 1.258102945780533
+					<Normal> { -2.1806396446202996 -2.442417656565188 -0.20693569482992166 }
+					<UV> { 0.625462 0.571457 }
+				}
+				<Vertex> 54 { -0.18963254157092002 2.0847979431937556 1.258102945780533
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.625462 0.571457 }
+				}
+				<Vertex> 55 { -0.18963254157092002 2.1433585190614424 1.4391978268209527
+					<Normal> { -2.2669042658618115 -1.9827766561537867 1.3012261335171087 }
+					<UV> { 0.727836 0.604591 }
+				}
+				<Vertex> 56 { -0.18963254157092002 2.1433585190614424 1.4391978268209527
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.727836 0.604591 }
+				}
+				<Vertex> 57 { -0.18963254157092002 2.284756883508735 1.5141619254519134
+					<Normal> { -2.4050931761583945 -0.3143176489749821 2.209124566324255 }
+					<UV> { 0.770252 0.684597 }
+				}
+				<Vertex> 58 { -0.18963254157092002 2.284756883508735 1.5141619254519134
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.770252 0.684597 }
+				}
+				<Vertex> 59 { -0.18963254157092002 2.4261552632329995 1.4391978268209527
+					<Normal> { -2.301415120522807 1.638333308452679 1.6681762487706648 }
+					<UV> { 0.727836 0.76451 }
+				}
+				<Vertex> 60 { -0.18963254157092002 2.4261552632329995 1.4391978268209527
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.727836 0.76451 }
+				}
+				<Vertex> 61 { -0.18963254157092002 2.4261552632329995 1.4391978268209527
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.725582 0.76451 }
+				}
+				<Vertex> 62 { -0.18963254157092002 2.4261552632329995 1.4391978268209527
+					<Normal> { -2.301415120522807 1.638333308452679 1.6681762487706648 }
+					<UV> { 0.725582 0.76451 }
+				}
+				<Vertex> 63 { -0.18963254157092002 2.4261552632329995 1.0771720783050007
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.523088 0.76451 }
+				}
+				<Vertex> 64 { -0.26804461019245657 2.284756883508735 1.258102945780533
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.625462 0.684597 }
+				}
+				<Vertex> 65 { -0.26804461019245657 2.284756883508735 1.258102945780533
+					<Normal> { -3.2808398950131235 1.307550739022163E-8 -2.3726814654899316E-4 }
+					<UV> { 0.625462 0.684597 }
+				}
+				<Vertex> 66 { -0.18963254157092002 2.484715829934503 1.258102945780533
+					<Normal> { -2.180608942752748 2.4424964612944278 0.2063273291642763 }
+					<UV> { 0.625462 0.797645 }
+				}
+				<Vertex> 67 { -0.18963254157092002 2.484715829934503 1.258102945780533
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.625462 0.797645 }
+				}
+				<Vertex> 68 { -0.03641732208176548 2.6746686411933944 1.5356505623011951
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.259476 0.935143 }
+				}
+				<Vertex> 69 { -0.05249344081351451 2.443542998767551 1.4141004515673743
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.216714 0.853942 }
+				}
+				<Vertex> 70 { -0.03641732208176548 2.6746686411933944 1.5356505623011951
+					<Normal> { -0.1273100970806725 2.6776759764062614 1.891260900078732 }
+					<UV> { 0.259476 0.935143 }
+				}
+				<Vertex> 71 { -0.05249344081351451 2.443542998767551 1.4141004515673743
+					<Normal> { -3.1004349390665693 -0.17624127723431277 1.0583277636171033 }
+					<UV> { 0.216714 0.853942 }
+				}
+				<Vertex> 72 { 0.05741469840717128 2.443542998767551 1.4141004515673743
+					<Normal> { 2.8044654159095344 -0.0823413908927025 1.7005481755979657 }
+					<UV> { 0.216714 0.853942 }
+				}
+				<Vertex> 73 { -0.019849081257275084 2.6116791216042317 1.395892525992615
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.210375 0.912955 }
+				}
+				<Vertex> 74 { -0.019849081257275084 2.6116791216042317 1.395892525992615
+					<Normal> { -2.9375541006799133 1.422913150357775 0.3314035359979402 }
+					<UV> { 0.210375 0.912955 }
+				}
+				<Vertex> 75 { 0.023950131798255943 2.6116791216042317 1.395892525992615
+					<Normal> { 2.956890410638544 1.267308812706733 0.6437946488859294 }
+					<UV> { 0.210375 0.912955 }
+				}
+				<Vertex> 76 { 0.025098425338626534 2.7875248841599394 1.3468459926554401
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.193144 0.974792 }
+				}
+				<Vertex> 77 { 0.025098425338626534 2.7875248841599394 1.3468459926554401
+					<Normal> { 0.0877309043028849 3.058860513639697 1.182666080510854 }
+					<UV> { 0.193144 0.974792 }
+				}
+				<Vertex> 78 { -0.019849081257275084 2.6815580908722136 1.1649309276856015
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.129232 0.937505 }
+				}
+				<Vertex> 79 { -0.019849081257275084 2.6815580908722136 1.1649309276856015
+					<Normal> { -2.852904554114254 1.6199201825981537 0.022080298674404607 }
+					<UV> { 0.129232 0.937505 }
+				}
+				<Vertex> 80 { 0.023950131798255943 2.6815580908722136 1.1649309276856015
+					<Normal> { 2.859229334383186 1.6032540578627974 -0.13447170312155196 }
+					<UV> { 0.129232 0.937505 }
+				}
+				<Vertex> 81 { -0.020177164689449502 2.774073963045767 1.009261491804055
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.0744829 0.970009 }
+				}
+				<Vertex> 82 { -0.020177164689449502 2.774073963045767 1.009261491804055
+					<Normal> { -0.08451811641728471 3.009292534493321 -1.3038550436409178 }
+					<UV> { 0.0744829 0.970009 }
+				}
+				<Vertex> 83 { -0.019849081257275084 2.5677176687437275 0.9551298657686325
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.055465 0.89751 }
+				}
+				<Vertex> 84 { -0.019849081257275084 2.5677176687437275 0.9551298657686325
+					<Normal> { -2.5719511774894133 1.2949769967065143 -1.5721549349625927 }
+					<UV> { 0.055465 0.89751 }
+				}
+				<Vertex> 85 { 0.023950131798255943 2.5677176687437275 0.9551298657686325
+					<Normal> { 2.5457040140322187 1.5194408285488883 -1.405079131713281 }
+					<UV> { 0.055465 0.89751 }
+				}
+				<Vertex> 86 { 0.025098425338626534 2.5122737508655506 0.8173402733349736
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.00711319 0.878089 }
+				}
+				<Vertex> 87 { 0.025098425338626534 2.5122737508655506 0.8173402733349736
+					<Normal> { 0.12380965640695077 1.0236907385735619 -3.1144424864529685 }
+					<UV> { 0.00711319 0.878089 }
+				}
+				<Vertex> 88 { -0.05249344081351451 2.3734999426052195 0.9707132198794587
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.0609975 0.829333 }
+				}
+				<Vertex> 89 { -0.05249344081351451 2.3734999426052195 0.9707132198794587
+					<Normal> { -3.150979208508189 -0.14562137459437585 -0.9022007335559943 }
+					<UV> { 0.0609975 0.829333 }
+				}
+				<Vertex> 90 { 0.05741469840717128 2.3734999426052195 0.9707132198794587
+					<Normal> { 3.210430735052414 -0.1070529981754251 -0.6674924335714182 }
+					<UV> { 0.0609975 0.829333 }
+				}
+				<Vertex> 91 { 0.023950131798255943 2.5677176687437275 0.9551298657686325
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.055465 0.89751 }
+				}
+				<Vertex> 92 { 0.023950131798255943 2.6116791216042317 1.395892525992615
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.210375 0.912955 }
+				}
+				<Vertex> 93 { 0.05741469840717128 2.443542998767551 1.4141004515673743
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.216714 0.853942 }
+				}
+				<Vertex> 94 { 0.05741469840717128 2.3734999426052195 0.9707132198794587
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.0609975 0.829333 }
+				}
+				<Vertex> 95 { 0.023950131798255943 2.6815580908722136 1.1649309276856015
+					<Normal> { 0.0 0.0 0.0 }
+					<UV> { 0.129232 0.937505 }
+				}
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 1 0 0 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 4 3 2 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 1 5 5 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 6 3 4 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 1 7 7 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 8 3 6 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 1 9 9 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 10 3 8 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 1 11 11 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 12 3 10 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 1 13 13 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 14 3 12 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 1 15 15 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 16 3 14 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 1 17 17 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 2 3 16 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 19 18 18 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 22 21 20 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 19 23 23 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 24 21 22 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 25 23 23 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 27 4 26 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 5 28 28 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 6 4 27 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 7 28 28 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 29 6 27 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 7 30 30 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 8 6 29 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 9 30 30 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 31 8 29 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 9 32 32 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 10 8 31 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 11 32 32 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 33 10 31 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 11 34 34 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 12 10 33 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 13 34 34 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 35 12 33 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 13 36 36 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 14 12 35 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 15 36 36 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 37 14 35 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 15 38 38 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 16 14 37 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 40 39 39 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 20 42 41 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 40 18 18 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 21 42 20 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 18 43 43 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 45 20 44 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 18 46 46 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 22 20 45 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 23 46 46 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 48 26 47 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 50 49 49 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 27 26 48 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 28 49 49 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 51 27 48 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 28 52 52 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 29 27 51 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 30 52 52 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 53 29 51 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 30 54 54 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 31 29 53 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 32 54 54 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 55 31 53 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 32 56 56 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 33 31 55 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 34 56 56 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 57 33 55 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 34 58 58 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 35 33 57 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 36 58 58 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 59 35 57 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 36 60 60 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 37 35 59 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 39 61 61 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 44 41 62 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 39 43 43 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 20 41 44 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 64 63 63 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 66 65 47 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 64 49 49 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 47 65 48 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 64 52 52 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 48 65 51 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 64 54 54 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 51 65 53 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 64 56 56 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 53 65 55 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 64 58 58 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 55 65 57 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 64 60 60 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 57 65 59 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 64 67 67 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 59 65 66 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 69 68 68 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 72 71 70 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 68 73 73 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 75 70 74 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 73 76 76 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 75 74 77 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 76 78 78 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 80 77 79 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 78 81 81 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 80 79 82 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 81 83 83 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 85 82 84 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 83 86 86 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 85 84 87 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 86 88 88 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 90 87 89 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 83 88 88 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 87 84 89 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 73 78 78 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 77 74 79 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 69 73 73 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 70 71 74 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 88 73 73 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 71 89 74 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 88 78 78 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 74 89 79 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 83 78 78 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 89 84 79 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 83 81 81 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 79 84 82 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 91 86 86 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 90 85 87 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 92 76 76 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 80 75 77 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 93 68 68 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 75 72 70 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 94 93 93 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 75 90 72 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 94 92 92 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 80 90 75 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 91 94 94 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 80 85 90 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 91 95 95 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Polygon>  {
+				<TRef> { TextureMap }
+				<RGBA> { 1.0 1.0 1.0 1.0 }
+				<BFace> { 0 }
+				<VertexRef> { 82 85 80 <Ref> { Chicken.Neck.Head.verts } }
+			}
+			<Group> UpperLip {
+				<Transform> {
+					<Matrix4> { 
+						1.0 0.0 0.0 0.0 
+						0.0 1.0 0.0 0.0 
+						0.0 0.0 1.0 0.0 
+						0.0018 0.0063 0.1156 1.0 
+					}
+				}
+				<VertexPool> Chicken.Neck.Head.UpperLip.verts {
+					<Vertex> 0 { -0.052493436892670914 2.2668770507278397 1.5879777911910549
+						<Normal> { 0.0 0.0 0.0 }
+						<UV> { 0.392093 0.95123 }
+					}
+					<Vertex> 1 { -0.11138451991118783 2.1638629232524957 1.5041557867847768
+						<Normal> { 0.0 0.0 0.0 }
+						<UV> { 0.362587 0.915038 }
+					}
+					<Vertex> 2 { -0.052493436892670914 2.2668770507278397 1.5879777911910549
+						<Normal> { -1.7060744246159951 1.5493751862636969 2.3349536223082215 }
+						<UV> { 0.392093 0.95123 }
+					}
+					<Vertex> 3 { -0.11138451991118783 2.1638629232524957 1.5041557867847768
+						<Normal> { -2.369364611120049 -2.227866794807341 0.43151607163166705 }
+						<UV> { 0.362587 0.915038 }
+					}
+					<Vertex> 4 { 0.006725721823734787 2.086110221260349 1.7511928471159524
+						<Normal> { 0.00990517397736275 -0.08468344838003845 3.279596471144054 }
+						<UV> { 0.449378 0.887721 }
+					}
+					<Vertex> 5 { 0.06594488378663076 2.2668770507278397 1.5879777911910549
+						<Normal> { 0.0 0.0 0.0 }
+						<UV> { 0.392093 0.95123 }
+					}
+					<Vertex> 6 { 0.06594488378663076 2.2668770507278397 1.5879777911910549
+						<Normal> { 1.7194835141574931 1.541064513825294 2.330614278023972 }
+						<UV> { 0.392093 0.95123 }
+					}
+					<Vertex> 7 { 0.1231955435332351 2.1638629232524957 1.5041557867847768
+						<Normal> { 0.0 0.0 0.0 }
+						<UV> { 0.362587 0.915038 }
+					}
+					<Vertex> 8 { 0.1231955435332351 2.1638629232524957 1.5041557867847768
+						<Normal> { 2.3671779341585055 -2.23370851312322 0.4129144890580239 }
+						<UV> { 0.362587 0.915038 }
+					}
+					<Vertex> 9 { -0.11138451991118783 2.1638629232524957 1.5041557867847768
+						<Normal> { 0.0 0.0 0.0 }
+						<UV> { 0.349151 0.888166 }
+					}
+					<Vertex> 10 { 0.1231955435332351 2.1638629232524957 1.5041557867847768
+						<Normal> { 0.0 0.0 0.0 }
+						<UV> { 0.349151 0.888166 }
+					}
+					<Vertex> 11 { -0.11138451991118783 2.1638629232524957 1.5041557867847768
+						<Normal> { -2.369364611120049 -2.227866794807341 0.43151607163166705 }
+						<UV> { 0.349151 0.888166 }
+					}
+					<Vertex> 12 { 0.1231955435332351 2.1638629232524957 1.5041557867847768
+						<Normal> { 2.3671779341585055 -2.23370851312322 0.4129144890580239 }
+						<UV> { 0.349151 0.888166 }
+					}
+					<Vertex> 13 { 0.006725721823734787 2.086110221260349 1.7511928471159524
+						<Normal> { 0.00990517397736275 -0.08468344838003845 3.279596471144054 }
+						<UV> { 0.435942 0.86085 }
+					}
+				}
+				<Polygon>  {
+					<TRef> { TextureMap }
+					<RGBA> { 1.0 1.0 1.0 1.0 }
+					<BFace> { 0 }
+					<VertexRef> { 1 0 0 <Ref> { Chicken.Neck.Head.UpperLip.verts } }
+				}
+				<Polygon>  {
+					<TRef> { TextureMap }
+					<RGBA> { 1.0 1.0 1.0 1.0 }
+					<BFace> { 0 }
+					<VertexRef> { 4 3 2 <Ref> { Chicken.Neck.Head.UpperLip.verts } }
+				}
+				<Polygon>  {
+					<TRef> { TextureMap }
+					<RGBA> { 1.0 1.0 1.0 1.0 }
+					<BFace> { 0 }
+					<VertexRef> { 0 5 5 <Ref> { Chicken.Neck.Head.UpperLip.verts } }
+				}
+				<Polygon>  {
+					<TRef> { TextureMap }
+					<RGBA> { 1.0 1.0 1.0 1.0 }
+					<BFace> { 0 }
+					<VertexRef> { 4 2 6 <Ref> { Chicken.Neck.Head.UpperLip.verts } }
+				}
+				<Polygon>  {
+					<TRef> { TextureMap }
+					<RGBA> { 1.0 1.0 1.0 1.0 }
+					<BFace> { 0 }
+					<VertexRef> { 5 7 7 <Ref> { Chicken.Neck.Head.UpperLip.verts } }
+				}
+				<Polygon>  {
+					<TRef> { TextureMap }
+					<RGBA> { 1.0 1.0 1.0 1.0 }
+					<BFace> { 0 }
+					<VertexRef> { 4 6 8 <Ref> { Chicken.Neck.Head.UpperLip.verts } }
+				}
+				<Polygon>  {
+					<TRef> { TextureMap }
+					<RGBA> { 1.0 1.0 1.0 1.0 }
+					<BFace> { 0 }
+					<VertexRef> { 10 9 9 <Ref> { Chicken.Neck.Head.UpperLip.verts } }
+				}
+				<Polygon>  {
+					<TRef> { TextureMap }
+					<RGBA> { 1.0 1.0 1.0 1.0 }
+					<BFace> { 0 }
+					<VertexRef> { 13 12 11 <Ref> { Chicken.Neck.Head.UpperLip.verts } }
+				}
+			}
+
+			<Group> LowerLip {
+				<Transform> {
+					<Matrix4> { 
+						1.0 0.0 0.0 0.0 
+						0.0 1.0 0.0 0.0 
+						0.0 0.0 1.0 0.0 
+						0.0018 -0.0106 0.1085 1.0 
+					}
+				}
+				<VertexPool> Chicken.Neck.Head.LowerLip.verts {
+					<Vertex> 0 { 0.005577427829810408 2.0782365318445644 1.4808627839402888
+						<Normal> { 0.0 0.0 0.0 }
+						<UV> { 0.323053 0.824046 }
+					}
+					<Vertex> 1 { 0.12303149876162763 2.163862923785356 1.5008750817725909
+						<Normal> { 0.0 0.0 0.0 }
+						<UV> { 0.330084 0.85413 }
+					}
+					<Vertex> 2 { 0.005577427829810408 2.0782365318445644 1.4808627839402888
+						<Normal> { -0.0016053260384699492 -3.2792718660558715 0.09693323289531883 }
+						<UV> { 0.323053 0.824046 }
+					}
+					<Vertex> 3 { 0.12303149876162763 2.163862923785356 1.5008750817725909
+						<Normal> { 2.8110950637677212 0.6946506356013323 1.5423613698161525 }
+						<UV> { 0.330084 0.85413 }
+					}
+					<Vertex> 4 { 0.007053805733334244 2.086110224848604 1.7472560114593603
+						<Normal> { -0.013739958080387336 -2.906542900279118 1.521460615269271 }
+						<UV> { 0.416587 0.826813 }
+					}
+					<Vertex> 5 { -0.11122047513958036 2.1636988888327093 1.4995628006237158
+						<Normal> { 0.0 0.0 0.0 }
+						<UV> { 0.329623 0.854072 }
+					}
+					<Vertex> 6 { -0.11122047513958036 2.1636988888327093 1.4995628006237158
+						<Normal> { -2.804922032856879 0.6903202375115314 1.5554878325010675 }
+						<UV> { 0.329623 0.854072 }
+					}
+					<Vertex> 7 { 0.12303149876162763 2.163862923785356 1.5008750817725909
+						<Normal> { 0.0 0.0 0.0 }
+						<UV> { 0.347998 0.888166 }
+					}
+					<Vertex> 8 { -0.11122047513958036 2.1636988888327093 1.4995628006237158
+						<Normal> { 0.0 0.0 0.0 }
+						<UV> { 0.347537 0.888109 }
+					}
+					<Vertex> 9 { 0.12303149876162763 2.163862923785356 1.5008750817725909
+						<Normal> { 2.8110950637677212 0.6946506356013323 1.5423613698161525 }
+						<UV> { 0.347998 0.888166 }
+					}
+					<Vertex> 10 { -0.11122047513958036 2.1636988888327093 1.4995628006237158
+						<Normal> { -2.804922032856879 0.6903202375115314 1.5554878325010675 }
+						<UV> { 0.347537 0.888109 }
+					}
+					<Vertex> 11 { 0.007053805733334244 2.086110224848604 1.7472560114593603
+						<Normal> { -0.013739958080387336 -2.906542900279118 1.521460615269271 }
+						<UV> { 0.434501 0.86085 }
+					}
+				}
+				<Polygon>  {
+					<TRef> { TextureMap }
+					<RGBA> { 1.0 1.0 1.0 1.0 }
+					<BFace> { 0 }
+					<VertexRef> { 1 0 0 <Ref> { Chicken.Neck.Head.LowerLip.verts } }
+				}
+				<Polygon>  {
+					<TRef> { TextureMap }
+					<RGBA> { 1.0 1.0 1.0 1.0 }
+					<BFace> { 0 }
+					<VertexRef> { 4 3 2 <Ref> { Chicken.Neck.Head.LowerLip.verts } }
+				}
+				<Polygon>  {
+					<TRef> { TextureMap }
+					<RGBA> { 1.0 1.0 1.0 1.0 }
+					<BFace> { 0 }
+					<VertexRef> { 0 5 5 <Ref> { Chicken.Neck.Head.LowerLip.verts } }
+				}
+				<Polygon>  {
+					<TRef> { TextureMap }
+					<RGBA> { 1.0 1.0 1.0 1.0 }
+					<BFace> { 0 }
+					<VertexRef> { 4 2 6 <Ref> { Chicken.Neck.Head.LowerLip.verts } }
+				}
+				<Polygon>  {
+					<TRef> { TextureMap }
+					<RGBA> { 1.0 1.0 1.0 1.0 }
+					<BFace> { 0 }
+					<VertexRef> { 8 7 7 <Ref> { Chicken.Neck.Head.LowerLip.verts } }
+				}
+				<Polygon>  {
+					<TRef> { TextureMap }
+					<RGBA> { 1.0 1.0 1.0 1.0 }
+					<BFace> { 0 }
+					<VertexRef> { 11 10 9 <Ref> { Chicken.Neck.Head.LowerLip.verts } }
+				}
+			}
+
+		}
+
+	}
+
+}
+
